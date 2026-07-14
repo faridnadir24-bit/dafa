@@ -361,27 +361,27 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
   <div class="sb-brand">
     <div class="sb-logo">
       <div class="sb-icon"><i class="fa-solid fa-leaf"></i></div>
-      <div><div class="sb-name">SIRKUL AI</div><div class="sb-tagline">Mini Refinery v1.0</div></div>
+      <div><div class="sb-name">SIRKUL AI</div><div class="sb-tagline"><span data-i18n data-en="Mini Refinery v1.0">Mini Refinery v1.0</span></div></div>
     </div>
     <div class="sb-authors"><p><strong>Muhamad Daffa Amrulloh</strong> &middot; Politeknik Bhakti Asih<br>Purwakarta, Jawa Barat 2026</p></div>
-    <div class="sb-live"><div class="sb-live-dot"></div><span>Biogas hari ini:&nbsp;</span><strong id="sb-bio">1,124 L</strong></div>
+    <div class="sb-live"><div class="sb-live-dot"></div><span><span data-i18n data-en="Biogas today:">Biogas hari ini:</span>&nbsp;</span><strong id="sb-bio">1,124 L</strong></div>
   </div>
-  <div class="sb-sec">Monitoring Utama</div>
-  <div class="nav on" onclick="go('dash',this)"><i class="fa-solid fa-gauge-high"></i> Dashboard Utama</div>
-  <div class="nav" onclick="go('energy',this)"><i class="fa-solid fa-bolt"></i> Neraca Energi</div>
-  <div class="nav" onclick="go('t1',this)"><i class="fa-solid fa-flask"></i> Tabung 1 &middot; Bioreaktor</div>
-  <div class="nav" onclick="go('t2',this)"><i class="fa-solid fa-wind"></i> Tabung 2 &middot; Scrubber</div>
-  <div class="nav" onclick="go('t3',this)"><i class="fa-solid fa-gas-pump"></i> Tabung 3 &middot; Storage Gas</div>
-  <div class="sb-sec">Analisis &amp; AI</div>
-  <div class="nav" onclick="go('sim',this)"><i class="fa-solid fa-sliders"></i> Simulator Skenario</div>
-  <div class="nav" onclick="go('ai',this)"><i class="fa-solid fa-brain"></i> AI Prediksi &amp; Analisis</div>
-  <div class="nav" onclick="go('sensor',this)"><i class="fa-solid fa-microchip"></i> Status Semua Sensor</div>
-  <div class="sb-sec">Produk &amp; Laporan</div>
-  <div class="nav" onclick="go('produk',this)"><i class="fa-solid fa-recycle"></i> Produk Turunan</div>
-  <div class="nav" onclick="go('log',this)"><i class="fa-solid fa-file-lines"></i> Log &amp; Laporan AI <span class="nb" id="nb">0</span></div>
-  <div class="sb-sec">Konfigurasi</div>
-  <div class="nav" onclick="go('cfg',this)"><i class="fa-solid fa-sliders"></i> Pengaturan Threshold</div>
-  <div class="sb-foot"><p>SIRKUL AI v1.0.0 &middot; Polling 3s<br>Sistem Integrasi Resource, Karbon,<br>Uap &amp; Limbah &middot; Purwakarta 2026<br><strong style="color:rgba(255,255,255,.35)">Seluruh angka = data simulasi</strong></p></div>
+  <div class="sb-sec"><span data-i18n data-en="Main Monitoring">Monitoring Utama</span></div>
+  <div class="nav on" onclick="go('dash',this)"><i class="fa-solid fa-gauge-high"></i> <span data-i18n data-en="Main Dashboard">Dashboard Utama</span></div>
+  <div class="nav" onclick="go('energy',this)"><i class="fa-solid fa-bolt"></i> <span data-i18n data-en="Energy Balance">Neraca Energi</span></div>
+  <div class="nav" onclick="go('t1',this)"><i class="fa-solid fa-flask"></i> <span data-i18n data-en="Tank 1 &middot; Bioreactor">Tabung 1 &middot; Bioreaktor</span></div>
+  <div class="nav" onclick="go('t2',this)"><i class="fa-solid fa-wind"></i> <span data-i18n data-en="Tank 2 &middot; Scrubber">Tabung 2 &middot; Scrubber</span></div>
+  <div class="nav" onclick="go('t3',this)"><i class="fa-solid fa-gas-pump"></i> <span data-i18n data-en="Tank 3 &middot; Gas Storage">Tabung 3 &middot; Storage Gas</span></div>
+  <div class="sb-sec"><span data-i18n data-en="Analysis &amp; AI">Analisis &amp; AI</span></div>
+  <div class="nav" onclick="go('sim',this)"><i class="fa-solid fa-sliders"></i> <span data-i18n data-en="Scenario Simulator">Simulator Skenario</span></div>
+  <div class="nav" onclick="go('ai',this)"><i class="fa-solid fa-brain"></i> <span data-i18n data-en="AI Prediction &amp; Analysis">AI Prediksi &amp; Analisis</span></div>
+  <div class="nav" onclick="go('sensor',this)"><i class="fa-solid fa-microchip"></i> <span data-i18n data-en="All Sensor Status">Status Semua Sensor</span></div>
+  <div class="sb-sec"><span data-i18n data-en="Products &amp; Reports">Produk &amp; Laporan</span></div>
+  <div class="nav" onclick="go('produk',this)"><i class="fa-solid fa-recycle"></i> <span data-i18n data-en="By-products">Produk Turunan</span></div>
+  <div class="nav" onclick="go('log',this)"><i class="fa-solid fa-file-lines"></i> <span data-i18n data-en="AI Log &amp; Reports">Log &amp; Laporan AI</span> <span class="nb" id="nb">0</span></div>
+  <div class="sb-sec"><span data-i18n data-en="Configuration">Konfigurasi</span></div>
+  <div class="nav" onclick="go('cfg',this)"><i class="fa-solid fa-sliders"></i> <span data-i18n data-en="Threshold Settings">Pengaturan Threshold</span></div>
+  <div class="sb-foot"><p>SIRKUL AI v1.0.0 &middot; <span data-i18n data-en="3s polling">Polling 3s</span><br><span data-i18n data-en="Resource, Carbon, Vapor &amp; Waste Integration System">Sistem Integrasi Resource, Karbon, Uap &amp; Limbah</span> &middot; Purwakarta 2026<br><strong style="color:rgba(255,255,255,.35)" data-i18n data-en="All figures = simulated data">Seluruh angka = data simulasi</strong></p></div>
 </aside>
 <div class="sb-overlay" id="overlay" onclick="closeSB()"></div>
 
@@ -390,15 +390,16 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
   <button id="ham" onclick="toggleSB()"><i class="fa-solid fa-bars"></i></button>
   <div class="tb-title">
     <h2 id="ptitle">Dashboard Utama Analytics</h2>
-    <p>Pemantauan Real-Time &middot; Siklus Fermentasi 21 Hari &middot; AI-Powered IoT</p>
+    <p><span data-i18n data-en="Real-Time Monitoring &middot; 21-Day Fermentation Cycle &middot; AI-Powered IoT">Pemantauan Real-Time &middot; Siklus Fermentasi 21 Hari &middot; AI-Powered IoT</span></p>
   </div>
-  <div class="pill pill-eco"><i class="fa-solid fa-clock" style="font-size:9px"></i> Inkubasi: Hari <strong style="margin:0 2px">12</strong>/21
+  <div class="pill pill-eco"><i class="fa-solid fa-clock" style="font-size:9px"></i> <span data-i18n data-en="Incubation: Day">Inkubasi: Hari</span> <strong style="margin:0 2px">12</strong>/21
     <div class="pb-wrap" style="margin-left:3px"><div class="pb-track"><div class="pb-fill"></div></div></div>
     <span style="font-size:9px;color:var(--txm)">57%</span>
   </div>
-  <div class="pill pill-green"><div class="pill-dot"></div>AI Optimal</div>
+  <div class="pill pill-green"><div class="pill-dot"></div><span data-i18n data-en="AI Optimal">AI Optimal</span></div>
   <div class="pill pill-rose" id="alert-pill" style="display:none"><i class="fa-solid fa-triangle-exclamation"></i> <span id="apill">0</span></div>
-  <button class="btn btn-o btn-sm" onclick="window.print()" style="flex-shrink:0"><i class="fa-solid fa-print"></i> Cetak</button>
+  <button class="btn btn-o btn-sm" onclick="window.print()" style="flex-shrink:0"><i class="fa-solid fa-print"></i> <span data-i18n data-en="Print">Cetak</span></button>
+  <button id="lang-toggle" class="btn btn-o btn-sm" onclick="toggleLang()" style="flex-shrink:0;font-family:var(--mono);font-weight:700">ID / EN</button>
   <div class="clk" id="clk">--:--:--</div>
 </header>
 
@@ -406,54 +407,54 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 
 <!-- DASHBOARD -->
 <div id="pg-dash" class="pg on">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-gauge-high"></i> Dashboard Utama Analytics</h1><p>Ringkasan metrik real-time semua pilar sistem SIRKUL &middot; Inkubasi hari ke-12</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-gauge-high"></i> <span data-i18n data-en="Main Dashboard Analytics">Dashboard Utama Analytics</span></h1><p><span data-i18n data-en="Real-time metrics summary across all SIRKUL system pillars &middot; Incubation day 12">Ringkasan metrik real-time semua pilar sistem SIRKUL &middot; Inkubasi hari ke-12</span></p></div></div>
   <div class="kpi-bar">
-    <div class="kpi-item"><div class="kpi-dot" style="background:#22c55e"></div><div><div class="k-l">Biogas Total</div><div class="k-v" id="kpi-bio">1,124 L</div></div></div>
-    <div class="kpi-item"><div class="kpi-dot" style="background:#2563eb"></div><div><div class="k-l">Kemurnian CH&#8324;</div><div class="k-v" id="kpi-ch4">87.4%</div></div></div>
-    <div class="kpi-item"><div class="kpi-dot" style="background:#d97706"></div><div><div class="k-l">Suhu Reaktor</div><div class="k-v" id="kpi-tmp">35.2&deg;C</div></div></div>
-    <div class="kpi-item"><div class="kpi-dot" style="background:#7c3aed"></div><div><div class="k-l">Scrubber &#916;P</div><div class="k-v" id="kpi-dp">12.4 kPa</div></div></div>
-    <div class="kpi-item"><div class="kpi-dot" style="background:#0369a1"></div><div><div class="k-l">Storage Gas</div><div class="k-v" id="kpi-vol">73%</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#22c55e"></div><div><div class="k-l"><span data-i18n data-en="Total Biogas">Biogas Total</span></div><div class="k-v" id="kpi-bio">1,124 L</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#2563eb"></div><div><div class="k-l"><span data-i18n data-en="CH&#8324; Purity">Kemurnian CH&#8324;</span></div><div class="k-v" id="kpi-ch4">87.4%</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#d97706"></div><div><div class="k-l"><span data-i18n data-en="Reactor Temp.">Suhu Reaktor</span></div><div class="k-v" id="kpi-tmp">35.2&deg;C</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#7c3aed"></div><div><div class="k-l"><span data-i18n data-en="Scrubber &#916;P">Scrubber &#916;P</span></div><div class="k-v" id="kpi-dp">12.4 kPa</div></div></div>
+    <div class="kpi-item"><div class="kpi-dot" style="background:#0369a1"></div><div><div class="k-l"><span data-i18n data-en="Gas Storage">Storage Gas</span></div><div class="k-v" id="kpi-vol">73%</div></div></div>
   </div>
   <div class="g4">
-    <div class="c mc" id="crd-bio"><div class="mic mg"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="mlb">Total Biogas Yield</div><div class="mv"><span id="mv-bio">1,124</span><span> L</span></div><div class="mst ok" id="ms-bio"><i class="fa-solid fa-arrow-up"></i> +2.4 L/jam</div></div>
-    <div class="c mc" id="crd-ch4"><div class="mic mb2"><i class="fa-solid fa-atom"></i></div><div class="mlb">Kemurnian CH&#8324;</div><div class="mv"><span id="mv-ch4">87.4</span><span> %</span></div><div class="mst ok" id="ms-ch4"><i class="fa-solid fa-check"></i> Melampaui 85%</div></div>
-    <div class="c mc" id="crd-tmp"><div class="mic ma"><i class="fa-solid fa-temperature-half"></i></div><div class="mlb">Suhu Reaktor</div><div class="mv"><span id="mv-tmp">35.2</span><span> &deg;C</span></div><div class="mst ok" id="ms-tmp"><i class="fa-solid fa-check"></i> Mesofilik optimal</div></div>
-    <div class="c mc" id="crd-dp"><div class="mic mr"><i class="fa-solid fa-gauge"></i></div><div class="mlb">Differential Pressure</div><div class="mv"><span id="mv-dp">12.4</span><span> kPa</span></div><div class="mst neu" id="ms-dp"><i class="fa-solid fa-circle-dot"></i> Normal &lt;25 kPa</div></div>
+    <div class="c mc" id="crd-bio"><div class="mic mg"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="mlb"><span data-i18n data-en="Total Biogas Yield">Total Biogas Yield</span></div><div class="mv"><span id="mv-bio">1,124</span><span> L</span></div><div class="mst ok" id="ms-bio"><i class="fa-solid fa-arrow-up"></i> <span data-i18n data-en="+2.4 L/hr">+2.4 L/jam</span></div></div>
+    <div class="c mc" id="crd-ch4"><div class="mic mb2"><i class="fa-solid fa-atom"></i></div><div class="mlb"><span data-i18n data-en="CH&#8324; Purity">Kemurnian CH&#8324;</span></div><div class="mv"><span id="mv-ch4">87.4</span><span> %</span></div><div class="mst ok" id="ms-ch4"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Exceeds 85%">Melampaui 85%</span></div></div>
+    <div class="c mc" id="crd-tmp"><div class="mic ma"><i class="fa-solid fa-temperature-half"></i></div><div class="mlb"><span data-i18n data-en="Reactor Temperature">Suhu Reaktor</span></div><div class="mv"><span id="mv-tmp">35.2</span><span> &deg;C</span></div><div class="mst ok" id="ms-tmp"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Optimal mesophilic">Mesofilik optimal</span></div></div>
+    <div class="c mc" id="crd-dp"><div class="mic mr"><i class="fa-solid fa-gauge"></i></div><div class="mlb"><span data-i18n data-en="Differential Pressure">Differential Pressure</span></div><div class="mv"><span id="mv-dp">12.4</span><span> kPa</span></div><div class="mst neu" id="ms-dp"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="Normal &lt;25 kPa">Normal &lt;25 kPa</span></div></div>
   </div>
   <div class="g2">
-    <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> Akumulasi Biogas 21 Hari <span class="ct-r">+ Proyeksi AI</span></div><div class="cw lg"><canvas id="ch-bio"></canvas></div></div>
-    <div class="c"><div class="ct"><i class="fa-solid fa-chart-area"></i> Tren Suhu &amp; pH Real-Time <span class="ct-r">Live Rolling</span></div><div class="cw lg"><canvas id="ch-trend"></canvas></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="21-Day Biogas Accumulation">Akumulasi Biogas 21 Hari</span> <span class="ct-r"><span data-i18n data-en="+ AI Projection">+ Proyeksi AI</span></span></div><div class="cw lg"><canvas id="ch-bio"></canvas></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-chart-area"></i> <span data-i18n data-en="Real-Time Temp. &amp; pH Trend">Tren Suhu &amp; pH Real-Time</span> <span class="ct-r"><span data-i18n data-en="Live Rolling">Live Rolling</span></span></div><div class="cw lg"><canvas id="ch-trend"></canvas></div></div>
   </div>
   <div class="g2">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-diagram-project"></i> Alur Proses &amp; Status Node</div>
+      <div class="ct"><i class="fa-solid fa-diagram-project"></i> <span data-i18n data-en="Process Flow &amp; Node Status">Alur Proses &amp; Status Node</span></div>
       <div class="flow">
-        <div class="fn"><div class="fc fc-g" id="nd1"><i class="fa-solid fa-flask"></i></div><div class="fl">Tabung 1</div><div class="fs">Bioreaktor</div></div>
+        <div class="fn"><div class="fc fc-g" id="nd1"><i class="fa-solid fa-flask"></i></div><div class="fl"><span data-i18n data-en="Tank 1">Tabung 1</span></div><div class="fs"><span data-i18n data-en="Bioreactor">Bioreaktor</span></div></div>
         <div class="fa"><div class="fal"></div><div class="fah"></div></div>
-        <div class="fn"><div class="fc fc-a" id="nd2"><i class="fa-solid fa-wind"></i></div><div class="fl">Tabung 2</div><div class="fs">Scrubber</div></div>
+        <div class="fn"><div class="fc fc-a" id="nd2"><i class="fa-solid fa-wind"></i></div><div class="fl"><span data-i18n data-en="Tank 2">Tabung 2</span></div><div class="fs">Scrubber</div></div>
         <div class="fa"><div class="fal"></div><div class="fah"></div></div>
-        <div class="fn"><div class="fc fc-b" id="nd3"><i class="fa-solid fa-gas-pump"></i></div><div class="fl">Tabung 3</div><div class="fs">Storage</div></div>
+        <div class="fn"><div class="fc fc-b" id="nd3"><i class="fa-solid fa-gas-pump"></i></div><div class="fl"><span data-i18n data-en="Tank 3">Tabung 3</span></div><div class="fs"><span data-i18n data-en="Storage">Storage</span></div></div>
         <div class="fa" style="max-width:30px"><div class="fal"></div><div class="fah"></div></div>
-        <div class="fn"><div class="fc fc-g" style="background:#fef3c7;border-color:#b45309;color:#b45309"><i class="fa-solid fa-bolt"></i></div><div class="fl">Generator</div><div class="fs">Aerator</div></div>
+        <div class="fn"><div class="fc fc-g" style="background:#fef3c7;border-color:#b45309;color:#b45309"><i class="fa-solid fa-bolt"></i></div><div class="fl">Generator</div><div class="fs"><span data-i18n data-en="Aerator">Aerator</span></div></div>
       </div>
-      <div class="dk"><div class="dk-l">Status Sistem Keseluruhan</div><div class="dk-s" id="sys-s">Inisialisasi...</div><div class="dk-d" id="sys-d">Memuat data sensor...</div></div>
+      <div class="dk"><div class="dk-l"><span data-i18n data-en="Overall System Status">Status Sistem Keseluruhan</span></div><div class="dk-s" id="sys-s"><span data-i18n data-en="Initializing...">Inisialisasi...</span></div><div class="dk-d" id="sys-d"><span data-i18n data-en="Loading sensor data...">Memuat data sensor...</span></div></div>
     </div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-terminal"></i> AI Alert Console <span class="ct-r" id="con-cnt">0 event</span></div>
+      <div class="ct"><i class="fa-solid fa-terminal"></i> <span data-i18n data-en="AI Alert Console">AI Alert Console</span> <span class="ct-r" id="con-cnt">0 event</span></div>
       <div class="con" id="con" style="height:190px">
-        <div class="ll info"><span class="lt">[BOOT]</span> SIRKUL AI v1.0.0 dimulai...</div>
-        <div class="ll ok"><span class="lt">[BOOT]</span> Semua sensor online &#10003;</div>
-        <div class="ll sys"><span class="lt">[BOOT]</span> Polling IoT 3000ms aktif</div>
-        <div class="ll sys"><span class="lt">[BOOT]</span> Model prediksi AI dimuat &#10003;</div>
+        <div class="ll info"><span class="lt">[BOOT]</span> SIRKUL AI v1.0.0 <span data-i18n data-en="starting...">dimulai...</span></div>
+        <div class="ll ok"><span class="lt">[BOOT]</span> <span data-i18n data-en="All sensors online">Semua sensor online</span> &#10003;</div>
+        <div class="ll sys"><span class="lt">[BOOT]</span> <span data-i18n data-en="IoT polling 3000ms active">Polling IoT 3000ms aktif</span></div>
+        <div class="ll sys"><span class="lt">[BOOT]</span> <span data-i18n data-en="AI prediction model loaded">Model prediksi AI dimuat</span> &#10003;</div>
       </div>
     </div>
   </div>
   <div class="c mb">
-    <div class="ct"><i class="fa-solid fa-fire"></i> Heatmap Intensitas Produksi Biogas &mdash; 21 Hari</div>
-    <div style="font-size:9.5px;color:var(--txm);margin-bottom:8px">Intensitas warna menunjukkan volume produksi. Abu-abu = data belum tersedia (hari 13&ndash;21)</div>
+    <div class="ct"><i class="fa-solid fa-fire"></i> <span data-i18n data-en="Biogas Production Intensity Heatmap &mdash; 21 Days">Heatmap Intensitas Produksi Biogas &mdash; 21 Hari</span></div>
+    <div style="font-size:9.5px;color:var(--txm);margin-bottom:8px"><span data-i18n data-en="Color intensity indicates production volume. Gray = data not yet available (day 13&ndash;21)">Intensitas warna menunjukkan volume produksi. Abu-abu = data belum tersedia (hari 13&ndash;21)</span></div>
     <div class="hm-grid" id="hm-grid"></div>
     <div style="display:flex;align-items:center;gap:7px;margin-top:9px;font-size:9px;color:var(--txm);flex-wrap:wrap">
-      <span>Rendah</span>
+      <span><span data-i18n data-en="Low">Rendah</span></span>
       <div style="display:flex;gap:2px">
         <div style="width:12px;height:7px;border-radius:2px;background:#dcfce7"></div>
         <div style="width:12px;height:7px;border-radius:2px;background:#86efac"></div>
@@ -462,39 +463,39 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
         <div style="width:12px;height:7px;border-radius:2px;background:#16a34a"></div>
         <div style="width:12px;height:7px;border-radius:2px;background:#166534"></div>
       </div>
-      <span>Tinggi</span>
+      <span><span data-i18n data-en="High">Tinggi</span></span>
     </div>
   </div>
 </div>
 
 <!-- NERACA ENERGI (BARU) -->
 <div id="pg-energy" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-bolt"></i> Neraca Energi &middot; Hukum I Termodinamika</h1><p>Validasi kekekalan energi: limbah organik yang masuk diubah menjadi biogas, metana murni, dan energi termal</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-bolt"></i> <span data-i18n data-en="Energy Balance &middot; First Law of Thermodynamics">Neraca Energi &middot; Hukum I Termodinamika</span></h1><p><span data-i18n data-en="Energy conservation validation: incoming organic waste is converted into biogas, purified methane, and thermal energy">Validasi kekekalan energi: limbah organik yang masuk diubah menjadi biogas, metana murni, dan energi termal</span></p></div></div>
 
   <div class="ndc" style="margin-bottom:12px">
-    <div class="ndc-l"><i class="fa-solid fa-scale-balanced"></i>&nbsp; Prinsip Dasar Sistem</div>
-    <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.3">Energi tidak diciptakan atau dimusnahkan, hanya berubah bentuk</div>
-    <div class="ndc-d">Seluruh energi kimia dalam limbah organik yang masuk ke Tabung 1 terkonservasi: sebagian besar keluar sebagai biogas &amp; panas yang dapat dimanfaatkan, sisanya berubah menjadi pertumbuhan biomassa bakteri dan panas proses yang terbuang.</div>
+    <div class="ndc-l"><i class="fa-solid fa-scale-balanced"></i>&nbsp; <span data-i18n data-en="Core System Principle">Prinsip Dasar Sistem</span></div>
+    <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.3"><span data-i18n data-en="Energy is never created or destroyed, only transformed">Energi tidak diciptakan atau dimusnahkan, hanya berubah bentuk</span></div>
+    <div class="ndc-d"><span data-i18n data-en="All chemical energy in the organic waste entering Tank 1 is conserved: most exits as usable biogas &amp; heat, the rest becomes bacterial biomass growth and wasted process heat.">Seluruh energi kimia dalam limbah organik yang masuk ke Tabung 1 terkonservasi: sebagian besar keluar sebagai biogas &amp; panas yang dapat dimanfaatkan, sisanya berubah menjadi pertumbuhan biomassa bakteri dan panas proses yang terbuang.</span></div>
   </div>
 
   <div class="g13">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-gauge-high"></i> Efisiensi Konversi Energi</div>
-      <div class="eff-ring" style="height:150px"><canvas id="ch-eff" width="150" height="150"></canvas><div class="gdt"><div class="gdt-v" id="eff-pct">86%</div><div class="gdt-l">efisiensi</div></div></div>
+      <div class="ct"><i class="fa-solid fa-gauge-high"></i> <span data-i18n data-en="Energy Conversion Efficiency">Efisiensi Konversi Energi</span></div>
+      <div class="eff-ring" style="height:150px"><canvas id="ch-eff" width="150" height="150"></canvas><div class="gdt"><div class="gdt-v" id="eff-pct">86%</div><div class="gdt-l"><span data-i18n data-en="efficiency">efisiensi</span></div></div></div>
       <div class="eb-conserve">
         <i class="fa-solid fa-circle-check"></i>
-        <div><div class="eb-conserve-t">Energi Terkonservasi</div><div class="eb-conserve-d">Total energi sistem sesuai Hukum I (&#916;E &asymp; 0)</div></div>
+        <div><div class="eb-conserve-t"><span data-i18n data-en="Energy Conserved">Energi Terkonservasi</span></div><div class="eb-conserve-d"><span data-i18n data-en="Total system energy follows the First Law (&#916;E &asymp; 0)">Total energi sistem sesuai Hukum I (&#916;E &asymp; 0)</span></div></div>
       </div>
     </div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-right-left"></i> Alur Konversi Energi Real-Time</div>
+      <div class="ct"><i class="fa-solid fa-right-left"></i> <span data-i18n data-en="Real-Time Energy Conversion Flow">Alur Konversi Energi Real-Time</span></div>
       <div class="eb-flow">
         <div class="eb-col">
-          <div style="font-size:9px;font-weight:700;color:var(--txm);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px">Energi Masuk</div>
+          <div style="font-size:9px;font-weight:700;color:var(--txm);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px"><span data-i18n data-en="Energy In">Energi Masuk</span></div>
           <div class="eb-item">
-            <div class="eb-lb"><i class="fa-solid fa-jug-detergent" style="margin-right:3px;color:var(--eco)"></i>Laju Limbah Organik</div>
-            <div class="eb-vl"><span id="eb-waste">9.6</span><span> kg/jam</span></div>
-            <div class="eb-note">Volume &gt;200 L per siklus 21 hari</div>
+            <div class="eb-lb"><i class="fa-solid fa-jug-detergent" style="margin-right:3px;color:var(--eco)"></i><span data-i18n data-en="Organic Waste Rate">Laju Limbah Organik</span></div>
+            <div class="eb-vl"><span id="eb-waste">9.6</span><span> <span data-i18n data-en="kg/hr">kg/jam</span></span></div>
+            <div class="eb-note"><span data-i18n data-en="Volume &gt;200 L per 21-day cycle">Volume &gt;200 L per siklus 21 hari</span></div>
           </div>
         </div>
         <div class="eb-mid">
@@ -503,19 +504,19 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
           <div class="eb-line"></div>
         </div>
         <div class="eb-col">
-          <div style="font-size:9px;font-weight:700;color:var(--txm);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px">Energi Keluar</div>
+          <div style="font-size:9px;font-weight:700;color:var(--txm);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px"><span data-i18n data-en="Energy Out">Energi Keluar</span></div>
           <div class="eb-item">
-            <div class="eb-lb"><i class="fa-solid fa-fire-flame-curved" style="margin-right:3px;color:var(--eco)"></i>Laju Produksi Biogas</div>
-            <div class="eb-vl"><span id="eb-biogas">21.6</span><span> L/jam</span></div>
+            <div class="eb-lb"><i class="fa-solid fa-fire-flame-curved" style="margin-right:3px;color:var(--eco)"></i><span data-i18n data-en="Biogas Production Rate">Laju Produksi Biogas</span></div>
+            <div class="eb-vl"><span id="eb-biogas">21.6</span><span> <span data-i18n data-en="L/hr">L/jam</span></span></div>
           </div>
           <div class="eb-item">
-            <div class="eb-lb"><i class="fa-solid fa-atom" style="margin-right:3px;color:var(--blue)"></i>Kemurnian Metana (CH&#8324;)</div>
+            <div class="eb-lb"><i class="fa-solid fa-atom" style="margin-right:3px;color:var(--blue)"></i><span data-i18n data-en="Methane (CH&#8324;) Purity">Kemurnian Metana (CH&#8324;)</span></div>
             <div class="eb-vl"><span id="eb-ch4">87.4</span><span> %</span></div>
           </div>
           <div class="eb-item">
-            <div class="eb-lb"><i class="fa-solid fa-temperature-half" style="margin-right:3px;color:#b45309"></i>Energi Termal Dihasilkan</div>
-            <div class="eb-vl"><span id="eb-thermal">3.4</span><span> MJ/jam</span></div>
-            <div class="eb-note">Setara substitusi elektrisitas aerator &amp; LPG masak</div>
+            <div class="eb-lb"><i class="fa-solid fa-temperature-half" style="margin-right:3px;color:#b45309"></i><span data-i18n data-en="Thermal Energy Generated">Energi Termal Dihasilkan</span></div>
+            <div class="eb-vl"><span id="eb-thermal">3.4</span><span> <span data-i18n data-en="MJ/hr">MJ/jam</span></span></div>
+            <div class="eb-note"><span data-i18n data-en="Equivalent to aerator electricity &amp; cooking LPG substitution">Setara substitusi elektrisitas aerator &amp; LPG masak</span></div>
           </div>
         </div>
       </div>
@@ -524,38 +525,38 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 
   <div class="g2">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-chart-line"></i> Tren Efisiensi Konversi &amp; Energi Termal</div>
+      <div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="Conversion Efficiency &amp; Thermal Energy Trend">Tren Efisiensi Konversi &amp; Energi Termal</span></div>
       <div class="cw md"><canvas id="ch-energy-trend"></canvas></div>
     </div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-list-check"></i> Ringkasan Target Teknis Sistem</div>
+      <div class="ct"><i class="fa-solid fa-list-check"></i> <span data-i18n data-en="System Technical Target Summary">Ringkasan Target Teknis Sistem</span></div>
       <div class="sbs sb2">
-        <div class="sbx"><div class="sbx-v" style="color:var(--eco)">&gt;85%</div><div class="sbx-l">Target kemurnian CH&#8324; pasca-scrubber</div></div>
-        <div class="sbx"><div class="sbx-v" style="color:var(--blue)">82.6%</div><div class="sbx-l">Reduksi COD limbah di Tabung 1</div></div>
-        <div class="sbx"><div class="sbx-v" style="color:#b45309">229&ndash;265</div><div class="sbx-l">L(N)/kg VS &middot; target hasil metana</div></div>
-        <div class="sbx"><div class="sbx-v" style="color:var(--purple)">21 hari</div><div class="sbx-l">Siklus fermentasi mesofilik penuh</div></div>
+        <div class="sbx"><div class="sbx-v" style="color:var(--eco)">&gt;85%</div><div class="sbx-l"><span data-i18n data-en="Target post-scrubber CH&#8324; purity">Target kemurnian CH&#8324; pasca-scrubber</span></div></div>
+        <div class="sbx"><div class="sbx-v" style="color:var(--blue)">82.6%</div><div class="sbx-l"><span data-i18n data-en="COD reduction in Tank 1">Reduksi COD limbah di Tabung 1</span></div></div>
+        <div class="sbx"><div class="sbx-v" style="color:#b45309">229&ndash;265</div><div class="sbx-l"><span data-i18n data-en="L(N)/kg VS &middot; methane yield target">L(N)/kg VS &middot; target hasil metana</span></div></div>
+        <div class="sbx"><div class="sbx-v" style="color:var(--purple)">21 hari</div><div class="sbx-l"><span data-i18n data-en="Full mesophilic fermentation cycle">Siklus fermentasi mesofilik penuh</span></div></div>
       </div>
-      <div class="dk" style="margin-top:10px"><div class="dk-l">Kontribusi Rendah Karbon</div><div class="dk-s">Mitigasi CH&#8324; &amp; substitusi energi fosil</div><div class="dk-d">Biogas menggantikan LPG &amp; listrik PLN untuk aerasi kolam &middot; mendukung target NDC 31.89% &amp; SDG 7, 12, 13</div></div>
+      <div class="dk" style="margin-top:10px"><div class="dk-l"><span data-i18n data-en="Low-Carbon Contribution">Kontribusi Rendah Karbon</span></div><div class="dk-s"><span data-i18n data-en="CH&#8324; mitigation &amp; fossil energy substitution">Mitigasi CH&#8324; &amp; substitusi energi fosil</span></div><div class="dk-d"><span data-i18n data-en="Biogas replaces LPG &amp; grid electricity for pond aeration &middot; supports the 31.89% NDC target &amp; SDGs 7, 12, 13">Biogas menggantikan LPG &amp; listrik PLN untuk aerasi kolam &middot; mendukung target NDC 31.89% &amp; SDG 7, 12, 13</span></div></div>
     </div>
   </div>
   <div class="g2">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-chart-simple"></i> Alokasi Energi Kimia Limbah Masuk</div>
+      <div class="ct"><i class="fa-solid fa-chart-simple"></i> <span data-i18n data-en="Incoming Chemical Energy Allocation">Alokasi Energi Kimia Limbah Masuk</span></div>
       <div id="eb-sankey" style="display:flex;height:34px;border-radius:8px;overflow:hidden;margin-top:4px"></div>
       <div id="eb-sankey-legend" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:9px;font-size:9.5px"></div>
-      <div class="eb-note" style="margin-top:9px">Sebagian energi kimia limbah keluar sebagai biogas &amp; panas yang termanfaatkan; sisanya berubah menjadi pertumbuhan biomassa bakteri dan panas proses yang tidak tertangkap &mdash; totalnya tetap terkonservasi sesuai Hukum I.</div>
+      <div class="eb-note" style="margin-top:9px"><span data-i18n data-en="Part of the waste chemical energy exits as usable biogas &amp; heat; the rest becomes bacterial biomass growth and uncaptured process heat &mdash; the total remains conserved per the First Law.">Sebagian energi kimia limbah keluar sebagai biogas &amp; panas yang termanfaatkan; sisanya berubah menjadi pertumbuhan biomassa bakteri dan panas proses yang tidak tertangkap &mdash; totalnya tetap terkonservasi sesuai Hukum I.</span></div>
     </div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-table-columns"></i> SIRKUL vs Metode Konvensional</div>
+      <div class="ct"><i class="fa-solid fa-table-columns"></i> <span data-i18n data-en="SIRKUL vs Conventional Method">SIRKUL vs Metode Konvensional</span></div>
       <div class="tscroll">
         <table class="tbl" style="font-size:10px">
-          <thead><tr><th>Indikator</th><th>Konvensional</th><th>SIRKUL</th></tr></thead>
+          <thead><tr><th><span data-i18n data-en="Indicator">Indikator</span></th><th><span data-i18n data-en="Conventional">Konvensional</span></th><th>SIRKUL</th></tr></thead>
           <tbody>
-            <tr><td>Limbah cair</td><td style="color:var(--rose)">Dibuang langsung</td><td style="color:var(--eco)">Diolah &amp; dipulihkan</td></tr>
-            <tr><td>Emisi CH&#8324;</td><td style="color:var(--rose)">Lepas ke atmosfer</td><td style="color:var(--eco)">Ditangkap jadi energi</td></tr>
-            <tr><td>Energi aerator</td><td style="color:var(--rose)">100% listrik PLN</td><td style="color:var(--eco)">Disubstitusi biogas</td></tr>
-            <tr><td>Pupuk</td><td style="color:var(--rose)">Pupuk kimia</td><td style="color:var(--eco)">POC organik (NPK alami)</td></tr>
-            <tr><td>Pakan</td><td style="color:var(--rose)">100% pakan komersial</td><td style="color:var(--eco)">Disubstitusi maggot BSF</td></tr>
+            <tr><td><span data-i18n data-en="Liquid waste">Limbah cair</span></td><td style="color:var(--rose)"><span data-i18n data-en="Discharged directly">Dibuang langsung</span></td><td style="color:var(--eco)"><span data-i18n data-en="Treated &amp; recovered">Diolah &amp; dipulihkan</span></td></tr>
+            <tr><td><span data-i18n data-en="CH&#8324; emissions">Emisi CH&#8324;</span></td><td style="color:var(--rose)"><span data-i18n data-en="Released to atmosphere">Lepas ke atmosfer</span></td><td style="color:var(--eco)"><span data-i18n data-en="Captured as energy">Ditangkap jadi energi</span></td></tr>
+            <tr><td><span data-i18n data-en="Aerator energy">Energi aerator</span></td><td style="color:var(--rose)"><span data-i18n data-en="100% grid electricity">100% listrik PLN</span></td><td style="color:var(--eco)"><span data-i18n data-en="Substituted by biogas">Disubstitusi biogas</span></td></tr>
+            <tr><td><span data-i18n data-en="Fertilizer">Pupuk</span></td><td style="color:var(--rose)"><span data-i18n data-en="Chemical fertilizer">Pupuk kimia</span></td><td style="color:var(--eco)"><span data-i18n data-en="Organic POC (natural NPK)">POC organik (NPK alami)</span></td></tr>
+            <tr><td><span data-i18n data-en="Feed">Pakan</span></td><td style="color:var(--rose)"><span data-i18n data-en="100% commercial feed">100% pakan komersial</span></td><td style="color:var(--eco)"><span data-i18n data-en="Substituted by BSF maggot">Disubstitusi maggot BSF</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -563,113 +564,113 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
   </div>
 
   <div class="c mb">
-    <div class="ct"><i class="fa-solid fa-leaf"></i> Kontribusi Rendah Karbon &amp; Transisi Energi</div>
+    <div class="ct"><i class="fa-solid fa-leaf"></i> <span data-i18n data-en="Low-Carbon Contribution &amp; Energy Transition">Kontribusi Rendah Karbon &amp; Transisi Energi</span></div>
     <div class="sbs sb4">
-      <div class="sbx"><div class="sbx-v" style="color:var(--eco)">25&times;</div><div class="sbx-l">Potensi pemanasan global CH&#8324; vs CO&#8322; &middot; alasan mitigasi jadi prioritas</div></div>
-      <div class="sbx"><div class="sbx-v" style="color:var(--blue)">Aerator 24 jam</div><div class="sbx-l">Beban listrik PLN yang disubstitusi biogas</div></div>
-      <div class="sbx"><div class="sbx-v" style="color:#b45309">LPG masak</div><div class="sbx-l">Bahan bakar fosil yang disubstitusi gas metana</div></div>
-      <div class="sbx"><div class="sbx-v" style="color:var(--purple)">31.89%</div><div class="sbx-l">Target reduksi emisi nasional yang didukung &middot; SDG 7, 12, 13</div></div>
+      <div class="sbx"><div class="sbx-v" style="color:var(--eco)">25&times;</div><div class="sbx-l"><span data-i18n data-en="CH&#8324; global warming potential vs CO&#8322; &middot; why mitigation is a priority">Potensi pemanasan global CH&#8324; vs CO&#8322; &middot; alasan mitigasi jadi prioritas</span></div></div>
+      <div class="sbx"><div class="sbx-v" style="color:var(--blue)"><span data-i18n data-en="24-hr Aerator">Aerator 24 jam</span></div><div class="sbx-l"><span data-i18n data-en="Grid electricity load substituted by biogas">Beban listrik PLN yang disubstitusi biogas</span></div></div>
+      <div class="sbx"><div class="sbx-v" style="color:#b45309"><span data-i18n data-en="Cooking LPG">LPG masak</span></div><div class="sbx-l"><span data-i18n data-en="Fossil fuel substituted by methane gas">Bahan bakar fosil yang disubstitusi gas metana</span></div></div>
+      <div class="sbx"><div class="sbx-v" style="color:var(--purple)">31.89%</div><div class="sbx-l"><span data-i18n data-en="National emission reduction target supported &middot; SDG 7, 12, 13">Target reduksi emisi nasional yang didukung &middot; SDG 7, 12, 13</span></div></div>
     </div>
   </div>
-  <div class="sim-note">Seluruh nilai pada halaman ini adalah simulasi untuk keperluan demonstrasi prototipe</div>
+  <div class="sim-note"><span data-i18n data-en="All values on this page are simulated for prototype demonstration purposes">Seluruh nilai pada halaman ini adalah simulasi untuk keperluan demonstrasi prototipe</span></div>
 </div>
 
 <!-- TABUNG 1 -->
 <div id="pg-t1" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-flask"></i> Tabung 1 &middot; Bioreaktor Anaerobik</h1><p>Pilar S &middot; Volume &gt;200 L &middot; Fermentasi mesofilik ~35.2&deg;C</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-flask"></i> <span data-i18n data-en="Tank 1 &middot; Anaerobic Bioreactor">Tabung 1 &middot; Bioreaktor Anaerobik</span></h1><p><span data-i18n data-en="Pillar S &middot; Volume &gt;200 L &middot; Mesophilic fermentation ~35.2&deg;C">Pilar S &middot; Volume &gt;200 L &middot; Fermentasi mesofilik ~35.2&deg;C</span></p></div></div>
   <div class="g4 mb">
-    <div class="c mc" id="t1-c-tmp"><div class="mic ma"><i class="fa-solid fa-thermometer-half"></i></div><div class="mlb">Suhu Reaktor</div><div class="mv"><span id="t1-tv">35.2</span><span> &deg;C</span></div><div class="mst ok" id="t1-tst"><i class="fa-solid fa-check"></i> Target ~35.2&deg;C</div></div>
-    <div class="c mc" id="t1-c-ph"><div class="mic mb2"><i class="fa-solid fa-flask"></i></div><div class="mlb">pH Reaktor</div><div class="mv"><span id="t1-pv">7.02</span></div><div class="mst ok" id="t1-pst"><i class="fa-solid fa-check"></i> Rentang 6.8&ndash;7.2</div></div>
-    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-compress"></i></div><div class="mlb">Tekanan Internal</div><div class="mv"><span id="t1-kv">1.2</span><span> bar</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> Normal</div></div>
-    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-bacteria"></i></div><div class="mlb">Viabilitas Bakteri</div><div class="mv" style="font-size:16px"><span id="t1-bact-pct">98</span><span> %</span></div><div class="mst ok" id="t1-bst"><i class="fa-solid fa-check"></i> Aktif optimal</div></div>
+    <div class="c mc" id="t1-c-tmp"><div class="mic ma"><i class="fa-solid fa-thermometer-half"></i></div><div class="mlb"><span data-i18n data-en="Reactor Temperature">Suhu Reaktor</span></div><div class="mv"><span id="t1-tv">35.2</span><span> &deg;C</span></div><div class="mst ok" id="t1-tst"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Target ~35.2&deg;C">Target ~35.2&deg;C</span></div></div>
+    <div class="c mc" id="t1-c-ph"><div class="mic mb2"><i class="fa-solid fa-flask"></i></div><div class="mlb"><span data-i18n data-en="Reactor pH">pH Reaktor</span></div><div class="mv"><span id="t1-pv">7.02</span></div><div class="mst ok" id="t1-pst"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Range 6.8&ndash;7.2">Rentang 6.8&ndash;7.2</span></div></div>
+    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-compress"></i></div><div class="mlb"><span data-i18n data-en="Internal Pressure">Tekanan Internal</span></div><div class="mv"><span id="t1-kv">1.2</span><span> bar</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Normal">Normal</span></div></div>
+    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-bacteria"></i></div><div class="mlb"><span data-i18n data-en="Bacterial Viability">Viabilitas Bakteri</span></div><div class="mv" style="font-size:16px"><span id="t1-bact-pct">98</span><span> %</span></div><div class="mst ok" id="t1-bst"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Optimal activity">Aktif optimal</span></div></div>
   </div>
   <div class="g2">
-    <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> Tren Multi-Sensor Real-Time (7 Jam)</div><div class="cw xl"><canvas id="ch-t1"></canvas></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="Real-Time Multi-Sensor Trend (7 Hours)">Tren Multi-Sensor Real-Time (7 Jam)</span></div><div class="cw xl"><canvas id="ch-t1"></canvas></div></div>
     <div>
       <div class="c mb">
-        <div class="ct"><i class="fa-solid fa-layer-group"></i> Pemisahan Fase Fluida</div>
+        <div class="ct"><i class="fa-solid fa-layer-group"></i> <span data-i18n data-en="Fluid Phase Separation">Pemisahan Fase Fluida</span></div>
         <div style="display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap">
-          <div class="vwrap"><div class="vcap">TABUNG 1</div><div class="vessel"><div class="vg">&#8679; GAS CH&#8324;/CO&#8322;</div><div class="vl">&#128167; CALON POC</div><div class="vs">&#9632; SLUDGE BSF</div></div></div>
+          <div class="vwrap"><div class="vcap"><span data-i18n data-en="TANK 1">TABUNG 1</span></div><div class="vessel"><div class="vg">&#8679; <span data-i18n data-en="CH&#8324;/CO&#8322; GAS">GAS CH&#8324;/CO&#8322;</span></div><div class="vl">&#128167; <span data-i18n data-en="POC PRECURSOR">CALON POC</span></div><div class="vs">&#9632; <span data-i18n data-en="BSF SLUDGE">SLUDGE BSF</span></div></div></div>
           <div style="flex:1;min-width:160px;font-size:10.5px;line-height:1.55">
-            <div style="margin-bottom:8px"><span style="background:#fef3c7;color:#78350f;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px">Fase Gas (~25%)</span><br><span style="color:var(--txm);margin-top:3px;display:block">CH&#8324;, CO&#8322;, H&#8322;S &rarr; Tabung 2</span></div>
-            <div style="margin-bottom:8px"><span style="background:#dbeafe;color:#1e40af;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px">Fase Cair (~50%)</span><br><span style="color:var(--txm);margin-top:3px;display:block">Nutrisi NPK tinggi &rarr; Pupuk Organik Cair</span></div>
-            <div><span style="background:#fde68a;color:#92400e;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px">Fase Padat (~25%)</span><br><span style="color:var(--txm);margin-top:3px;display:block">Sludge kaya serat &rarr; media maggot BSF</span></div>
+            <div style="margin-bottom:8px"><span style="background:#fef3c7;color:#78350f;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px"><span data-i18n data-en="Gas Phase (~25%)">Fase Gas (~25%)</span></span><br><span style="color:var(--txm);margin-top:3px;display:block"><span data-i18n data-en="CH&#8324;, CO&#8322;, H&#8322;S &rarr; Tank 2">CH&#8324;, CO&#8322;, H&#8322;S &rarr; Tabung 2</span></span></div>
+            <div style="margin-bottom:8px"><span style="background:#dbeafe;color:#1e40af;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px"><span data-i18n data-en="Liquid Phase (~50%)">Fase Cair (~50%)</span></span><br><span style="color:var(--txm);margin-top:3px;display:block"><span data-i18n data-en="High NPK nutrients &rarr; Liquid Organic Fertilizer">Nutrisi NPK tinggi &rarr; Pupuk Organik Cair</span></span></div>
+            <div><span style="background:#fde68a;color:#92400e;font-weight:700;padding:2px 7px;border-radius:5px;font-size:9.5px"><span data-i18n data-en="Solid Phase (~25%)">Fase Padat (~25%)</span></span><br><span style="color:var(--txm);margin-top:3px;display:block"><span data-i18n data-en="Fiber-rich sludge &rarr; BSF maggot medium">Sludge kaya serat &rarr; media maggot BSF</span></span></div>
           </div>
         </div>
       </div>
       <div class="c">
-        <div class="ct"><i class="fa-solid fa-bacteria"></i> Kinetik Metabolik Bakteri</div>
-        <div class="dk" style="margin-bottom:9px"><div class="dk-l">Metanogen &middot; Acetogen &middot; Hidrolisis</div><div class="dk-s" id="t1-bs">&#10003; AKTIF OPTIMAL</div><div class="dk-d" id="t1-bd">pH 7.02 &middot; Suhu 35.2&deg;C mesofilik</div></div>
-        <div class="sbs sb3"><div class="sbx"><div class="sbx-v" id="t1-bact-tmp" style="color:var(--eco)">35.2</div><div class="sbx-l">&deg;C Suhu</div></div><div class="sbx"><div class="sbx-v" id="t1-bact-ph" style="color:var(--blue)">7.02</div><div class="sbx-l">pH</div></div><div class="sbx"><div class="sbx-v" id="t1-bact-kpa" style="color:var(--purple)">1.2</div><div class="sbx-l">bar Tekanan</div></div></div>
+        <div class="ct"><i class="fa-solid fa-bacteria"></i> <span data-i18n data-en="Bacterial Metabolic Kinetics">Kinetik Metabolik Bakteri</span></div>
+        <div class="dk" style="margin-bottom:9px"><div class="dk-l"><span data-i18n data-en="Methanogens &middot; Acetogens &middot; Hydrolysis">Metanogen &middot; Acetogen &middot; Hidrolisis</span></div><div class="dk-s" id="t1-bs">&#10003; AKTIF OPTIMAL</div><div class="dk-d" id="t1-bd">pH 7.02 &middot; Suhu 35.2&deg;C mesofilik</div></div>
+        <div class="sbs sb3"><div class="sbx"><div class="sbx-v" id="t1-bact-tmp" style="color:var(--eco)">35.2</div><div class="sbx-l"><span data-i18n data-en="&deg;C Temp.">&deg;C Suhu</span></div></div><div class="sbx"><div class="sbx-v" id="t1-bact-ph" style="color:var(--blue)">7.02</div><div class="sbx-l">pH</div></div><div class="sbx"><div class="sbx-v" id="t1-bact-kpa" style="color:var(--purple)">1.2</div><div class="sbx-l"><span data-i18n data-en="bar Pressure">bar Tekanan</span></div></div></div>
       </div>
     </div>
   </div>
   <div class="c mb">
-    <div class="ct"><i class="fa-solid fa-timeline"></i> Timeline Fermentasi 21 Hari</div>
+    <div class="ct"><i class="fa-solid fa-timeline"></i> <span data-i18n data-en="21-Day Fermentation Timeline">Timeline Fermentasi 21 Hari</span></div>
     <div class="timeline">
-      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h">Hari 1&ndash;3: Inisiasi Hidrolisis</div><div class="tl-s">Penambahan EM4 + molase &middot; Bakteri hidrolisis mengurai polimer organik kompleks</div></div>
-      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h">Hari 4&ndash;7: Asidogenesis &amp; Asetogenesis</div><div class="tl-s">Asam organik terbentuk &middot; Produksi H&#8322; dan CO&#8322; mulai meningkat signifikan</div></div>
-      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h">Hari 8&ndash;11: Metanogenesis Awal</div><div class="tl-s">Bakteri metanogen aktif &middot; Produksi CH&#8324; mulai terukur secara konsisten</div></div>
-      <div class="tl-item"><div class="tl-dot active"></div><div class="tl-h">Hari 12 (SEKARANG): Puncak Produksi</div><div class="tl-s">Komunitas metanogen stabil &middot; Volume biogas maksimal harian &middot; Total: 1,124 L kumulatif</div></div>
-      <div class="tl-item"><div class="tl-dot future"></div><div class="tl-h">Hari 13&ndash;21: Pematangan &amp; Panen</div><div class="tl-s">Laju produksi melambat &middot; POC siap panen &middot; Sludge matang untuk media BSF</div></div>
+      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h"><span data-i18n data-en="Day 1&ndash;3: Hydrolysis Initiation">Hari 1&ndash;3: Inisiasi Hidrolisis</span></div><div class="tl-s"><span data-i18n data-en="EM4 + molasses added &middot; Hydrolytic bacteria break down complex organic polymers">Penambahan EM4 + molase &middot; Bakteri hidrolisis mengurai polimer organik kompleks</span></div></div>
+      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h"><span data-i18n data-en="Day 4&ndash;7: Acidogenesis &amp; Acetogenesis">Hari 4&ndash;7: Asidogenesis &amp; Asetogenesis</span></div><div class="tl-s"><span data-i18n data-en="Organic acids form &middot; H&#8322; and CO&#8322; production begins rising significantly">Asam organik terbentuk &middot; Produksi H&#8322; dan CO&#8322; mulai meningkat signifikan</span></div></div>
+      <div class="tl-item"><div class="tl-dot done"></div><div class="tl-h"><span data-i18n data-en="Day 8&ndash;11: Early Methanogenesis">Hari 8&ndash;11: Metanogenesis Awal</span></div><div class="tl-s"><span data-i18n data-en="Methanogenic bacteria become active &middot; CH&#8324; production becomes consistently measurable">Bakteri metanogen aktif &middot; Produksi CH&#8324; mulai terukur secara konsisten</span></div></div>
+      <div class="tl-item"><div class="tl-dot active"></div><div class="tl-h"><span data-i18n data-en="Day 12 (NOW): Peak Production">Hari 12 (SEKARANG): Puncak Produksi</span></div><div class="tl-s"><span data-i18n data-en="Stable methanogen community &middot; Maximum daily biogas volume &middot; Cumulative total: 1,124 L">Komunitas metanogen stabil &middot; Volume biogas maksimal harian &middot; Total: 1,124 L kumulatif</span></div></div>
+      <div class="tl-item"><div class="tl-dot future"></div><div class="tl-h"><span data-i18n data-en="Day 13&ndash;21: Maturation &amp; Harvest">Hari 13&ndash;21: Pematangan &amp; Panen</span></div><div class="tl-s"><span data-i18n data-en="Production rate slows &middot; POC ready for harvest &middot; Sludge matured for BSF medium">Laju produksi melambat &middot; POC siap panen &middot; Sludge matang untuk media BSF</span></div></div>
     </div>
   </div>
 </div>
 
 <!-- TABUNG 2 -->
 <div id="pg-t2" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-wind"></i> Tabung 2 &middot; Packed Bed Scrubber</h1><p>Pilar K &middot; Adsorben Ca(OH)&#8322; &middot; Target CH&#8324; &gt;85% &middot; H&#8322;S &lt;5.0 ppm</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-wind"></i> <span data-i18n data-en="Tank 2 &middot; Packed Bed Scrubber">Tabung 2 &middot; Packed Bed Scrubber</span></h1><p><span data-i18n data-en="Pillar K &middot; Ca(OH)&#8322; Adsorbent &middot; Target CH&#8324; &gt;85% &middot; H&#8322;S &lt;5.0 ppm">Pilar K &middot; Adsorben Ca(OH)&#8322; &middot; Target CH&#8324; &gt;85% &middot; H&#8322;S &lt;5.0 ppm</span></p></div></div>
   <div class="g4 mb">
-    <div class="c mc" id="crd-dp2"><div class="mic mr"><i class="fa-solid fa-gauge"></i></div><div class="mlb">Differential Pressure &#916;P</div><div class="mv"><span id="mv-dp2">12.4</span><span> kPa</span></div><div class="mst neu" id="ms-dp2"><i class="fa-solid fa-circle-dot"></i> Maks 25 kPa</div></div>
-    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-atom"></i></div><div class="mlb">Kemurnian CH&#8324; Output</div><div class="mv"><span id="mv-ch4t2">87.4</span><span> %</span></div><div class="mst ok" id="ms-ch4t2"><i class="fa-solid fa-check"></i> Target &gt;85%</div></div>
-    <div class="c mc"><div class="mic mr"><i class="fa-solid fa-skull-crossbones"></i></div><div class="mlb">Kadar H&#8322;S</div><div class="mv"><span id="mv-h2s">2.8</span><span> ppm</span></div><div class="mst ok" id="ms-h2s"><i class="fa-solid fa-check"></i> &lt;5.0 ppm aman</div></div>
-    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-filter"></i></div><div class="mlb">Kejenuhan Adsorben</div><div class="mv"><span id="mv-ads">48</span><span> %</span></div><div class="mst neu" id="ms-ads"><i class="fa-solid fa-circle-dot"></i> Ca(OH)&#8322; aktif</div></div>
+    <div class="c mc" id="crd-dp2"><div class="mic mr"><i class="fa-solid fa-gauge"></i></div><div class="mlb">Differential Pressure &#916;P</div><div class="mv"><span id="mv-dp2">12.4</span><span> kPa</span></div><div class="mst neu" id="ms-dp2"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="Max 25 kPa">Maks 25 kPa</span></div></div>
+    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-atom"></i></div><div class="mlb"><span data-i18n data-en="Output CH&#8324; Purity">Kemurnian CH&#8324; Output</span></div><div class="mv"><span id="mv-ch4t2">87.4</span><span> %</span></div><div class="mst ok" id="ms-ch4t2"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Target &gt;85%">Target &gt;85%</span></div></div>
+    <div class="c mc"><div class="mic mr"><i class="fa-solid fa-skull-crossbones"></i></div><div class="mlb"><span data-i18n data-en="H&#8322;S Level">Kadar H&#8322;S</span></div><div class="mv"><span id="mv-h2s">2.8</span><span> ppm</span></div><div class="mst ok" id="ms-h2s"><i class="fa-solid fa-check"></i> <span data-i18n data-en="&lt;5.0 ppm safe">&lt;5.0 ppm aman</span></div></div>
+    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-filter"></i></div><div class="mlb"><span data-i18n data-en="Adsorbent Saturation">Kejenuhan Adsorben</span></div><div class="mv"><span id="mv-ads">48</span><span> %</span></div><div class="mst neu" id="ms-ads"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="Ca(OH)&#8322; active">Ca(OH)&#8322; aktif</span></div></div>
   </div>
   <div class="g13">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-gauge"></i> Readout &#916;P</div>
-      <div class="dp-big"><div class="dp-n dp-ok" id="dp2-n">12.4</div><div class="dp-u">kPa</div><div style="margin-top:5px"><span class="dp-b dpb-ok" id="dp2-b">&#10003; NORMAL</span></div><div style="font-size:9.5px;color:var(--txm);margin-top:7px">Batas: <strong id="dp2-max">25.0</strong> kPa</div></div>
-      <div style="margin-top:4px"><div style="font-size:9.5px;color:var(--txm);margin-bottom:4px;font-weight:600">Saturasi Ca(OH)&#8322; &rarr; CaCO&#8323;</div><div class="pbt" style="height:13px"><div class="pbf pf-ok" id="ads-bar" style="width:48%">48%</div></div></div>
+      <div class="ct"><i class="fa-solid fa-gauge"></i> <span data-i18n data-en="&#916;P Readout">Readout &#916;P</span></div>
+      <div class="dp-big"><div class="dp-n dp-ok" id="dp2-n">12.4</div><div class="dp-u">kPa</div><div style="margin-top:5px"><span class="dp-b dpb-ok" id="dp2-b">&#10003; <span data-i18n data-en="NORMAL">NORMAL</span></span></div><div style="font-size:9.5px;color:var(--txm);margin-top:7px"><span data-i18n data-en="Limit:">Batas:</span> <strong id="dp2-max">25.0</strong> kPa</div></div>
+      <div style="margin-top:4px"><div style="font-size:9.5px;color:var(--txm);margin-bottom:4px;font-weight:600"><span data-i18n data-en="Ca(OH)&#8322; Saturation &rarr; CaCO&#8323;">Saturasi Ca(OH)&#8322; &rarr; CaCO&#8323;</span></div><div class="pbt" style="height:13px"><div class="pbf pf-ok" id="ads-bar" style="width:48%">48%</div></div></div>
     </div>
     <div>
       <div class="c mb">
-        <div class="ct"><i class="fa-solid fa-atom"></i> Konsentrasi Gas Output</div>
-        <div class="pb"><div class="pb-row"><span><i class="fa-solid fa-fire" style="color:#059669;margin-right:3px"></i> Kemurnian CH&#8324;</span><span id="ch4-lv" style="color:var(--eco);font-weight:700">87.4%</span></div><div class="pbt" style="height:18px"><div class="pbf pf-g" id="bar-ch4" style="width:87.4%">87.4%</div></div><div style="font-size:9px;color:var(--txm);margin-top:3px">Target &gt;85% &middot; Minimum &gt;80%</div></div>
-        <div class="pb" style="margin-bottom:0"><div class="pb-row"><span><i class="fa-solid fa-skull-crossbones" style="color:#dc2626;margin-right:3px"></i> Kadar H&#8322;S</span><span id="h2s-lv" style="color:var(--rose);font-weight:700">2.8 ppm</span></div><div class="pbt" style="height:18px"><div class="pbf pf-r" id="bar-h2s" style="width:56%">2.8 ppm</div></div><div style="font-size:9px;color:var(--txm);margin-top:3px">Batas kritis &lt;5.0 ppm</div></div>
+        <div class="ct"><i class="fa-solid fa-atom"></i> <span data-i18n data-en="Output Gas Concentration">Konsentrasi Gas Output</span></div>
+        <div class="pb"><div class="pb-row"><span><i class="fa-solid fa-fire" style="color:#059669;margin-right:3px"></i> <span data-i18n data-en="CH&#8324; Purity">Kemurnian CH&#8324;</span></span><span id="ch4-lv" style="color:var(--eco);font-weight:700">87.4%</span></div><div class="pbt" style="height:18px"><div class="pbf pf-g" id="bar-ch4" style="width:87.4%">87.4%</div></div><div style="font-size:9px;color:var(--txm);margin-top:3px"><span data-i18n data-en="Target &gt;85% &middot; Minimum &gt;80%">Target &gt;85% &middot; Minimum &gt;80%</span></div></div>
+        <div class="pb" style="margin-bottom:0"><div class="pb-row"><span><i class="fa-solid fa-skull-crossbones" style="color:#dc2626;margin-right:3px"></i> <span data-i18n data-en="H&#8322;S Level">Kadar H&#8322;S</span></span><span id="h2s-lv" style="color:var(--rose);font-weight:700">2.8 ppm</span></div><div class="pbt" style="height:18px"><div class="pbf pf-r" id="bar-h2s" style="width:56%">2.8 ppm</div></div><div style="font-size:9px;color:var(--txm);margin-top:3px"><span data-i18n data-en="Critical limit &lt;5.0 ppm">Batas kritis &lt;5.0 ppm</span></div></div>
       </div>
-      <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> Tren &#916;P &amp; CH&#8324; &mdash; 60 Menit</div><div class="cw sm"><canvas id="ch-t2"></canvas></div></div>
+      <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="&#916;P &amp; CH&#8324; Trend &mdash; 60 Minutes">Tren &#916;P &amp; CH&#8324; &mdash; 60 Menit</span></div><div class="cw sm"><canvas id="ch-t2"></canvas></div></div>
     </div>
   </div>
   <div class="c mb">
-    <div class="ct"><i class="fa-solid fa-flask-vial"></i> Reaksi Kimia Aktif dalam Packed Bed Scrubber</div>
+    <div class="ct"><i class="fa-solid fa-flask-vial"></i> <span data-i18n data-en="Active Chemical Reactions in the Packed Bed Scrubber">Reaksi Kimia Aktif dalam Packed Bed Scrubber</span></div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:9px">
-      <div style="background:#f0fdf4;border-radius:8px;padding:11px;border:1px solid #bbf7d0"><div style="font-size:8.5px;font-weight:700;color:var(--eco);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px">H&#8322;S &rarr; Inert</div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">H&#8322;S + Ca(OH)&#8322; &rarr; CaS + 2H&#8322;O</div><div style="font-size:9.5px;color:var(--txm)">H&#8322;S korosif &rarr; CaS padat inert</div></div>
-      <div style="background:#eff6ff;border-radius:8px;padding:11px;border:1px solid #bfdbfe"><div style="font-size:8.5px;font-weight:700;color:var(--blue);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px">CO&#8322; &rarr; Deposit</div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">CO&#8322; + Ca(OH)&#8322; &rarr; CaCO&#8323; + H&#8322;O</div><div style="font-size:9.5px;color:var(--txm)">CO&#8322; ditangkap &rarr; CaCO&#8323; (kapur)</div></div>
-      <div style="background:#fefce8;border-radius:8px;padding:11px;border:1px solid #fde68a"><div style="font-size:8.5px;font-weight:700;color:#a16207;margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px">Indikator Saturasi</div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">&#916;P &gt; <span id="dp2-thr">25.0</span> kPa &rarr; Ganti Media</div><div style="font-size:9.5px;color:var(--txm)">CaCO&#8323; sumbat pori &rarr; backpressure &middot; jadwal reguler tiap ~14 hari</div></div>
+      <div style="background:#f0fdf4;border-radius:8px;padding:11px;border:1px solid #bbf7d0"><div style="font-size:8.5px;font-weight:700;color:var(--eco);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px"><span data-i18n data-en="H&#8322;S &rarr; Inert">H&#8322;S &rarr; Inert</span></div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">H&#8322;S + Ca(OH)&#8322; &rarr; CaS + 2H&#8322;O</div><div style="font-size:9.5px;color:var(--txm)"><span data-i18n data-en="Corrosive H&#8322;S &rarr; inert solid CaS">H&#8322;S korosif &rarr; CaS padat inert</span></div></div>
+      <div style="background:#eff6ff;border-radius:8px;padding:11px;border:1px solid #bfdbfe"><div style="font-size:8.5px;font-weight:700;color:var(--blue);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px"><span data-i18n data-en="CO&#8322; &rarr; Deposit">CO&#8322; &rarr; Deposit</span></div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">CO&#8322; + Ca(OH)&#8322; &rarr; CaCO&#8323; + H&#8322;O</div><div style="font-size:9.5px;color:var(--txm)"><span data-i18n data-en="CO&#8322; captured &rarr; CaCO&#8323; (limestone)">CO&#8322; ditangkap &rarr; CaCO&#8323; (kapur)</span></div></div>
+      <div style="background:#fefce8;border-radius:8px;padding:11px;border:1px solid #fde68a"><div style="font-size:8.5px;font-weight:700;color:#a16207;margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px"><span data-i18n data-en="Saturation Indicator">Indikator Saturasi</span></div><div style="font-size:11.5px;font-weight:700;margin-bottom:3px">&#916;P &gt; <span id="dp2-thr">25.0</span> kPa &rarr; <span data-i18n data-en="Replace Media">Ganti Media</span></div><div style="font-size:9.5px;color:var(--txm)"><span data-i18n data-en="CaCO&#8323; clogs pores &rarr; backpressure &middot; regular schedule every ~14 days">CaCO&#8323; sumbat pori &rarr; backpressure &middot; jadwal reguler tiap ~14 hari</span></div></div>
     </div>
   </div>
 </div>
 
 <!-- TABUNG 3 -->
 <div id="pg-t3" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-gas-pump"></i> Tabung 3 &middot; Penyimpanan Gas Metana</h1><p>Pilar U &middot; Tabung baja bertekanan rendah &middot; Metana murni &gt;85%</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-gas-pump"></i> <span data-i18n data-en="Tank 3 &middot; Methane Gas Storage">Tabung 3 &middot; Penyimpanan Gas Metana</span></h1><p><span data-i18n data-en="Pillar U &middot; Low-pressure steel tank &middot; Pure methane &gt;85%">Pilar U &middot; Tabung baja bertekanan rendah &middot; Metana murni &gt;85%</span></p></div></div>
   <div class="g4 mb">
-    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-circle-dot"></i></div><div class="mlb">Kapasitas Terisi</div><div class="mv"><span id="t3-pct-mc">73</span><span> %</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> Cukup 18+ jam</div></div>
-    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-cubes"></i></div><div class="mlb">Volume Tersimpan</div><div class="mv"><span id="t3-vol-mc">146</span><span> L</span></div><div class="mst neu"><i class="fa-solid fa-circle-dot"></i> Kapasitas 200 L</div></div>
-    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-compress-arrows-alt"></i></div><div class="mlb">Tekanan Tangki</div><div class="mv"><span id="t3-kpa-mc">0.8</span><span> bar</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> Tekanan rendah aman</div></div>
-    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-clock"></i></div><div class="mlb">Laju Konsumsi</div><div class="mv" style="font-size:16px"><span id="t3-rate">3.2</span><span> L/jam</span></div><div class="mst neu"><i class="fa-solid fa-circle-dot"></i> Pemakaian normal</div></div>
+    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-circle-dot"></i></div><div class="mlb"><span data-i18n data-en="Capacity Filled">Kapasitas Terisi</span></div><div class="mv"><span id="t3-pct-mc">73</span><span> %</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Enough for 18+ hours">Cukup 18+ jam</span></div></div>
+    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-cubes"></i></div><div class="mlb"><span data-i18n data-en="Volume Stored">Volume Tersimpan</span></div><div class="mv"><span id="t3-vol-mc">146</span><span> L</span></div><div class="mst neu"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="200 L capacity">Kapasitas 200 L</span></div></div>
+    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-compress-arrows-alt"></i></div><div class="mlb"><span data-i18n data-en="Tank Pressure">Tekanan Tangki</span></div><div class="mv"><span id="t3-kpa-mc">0.8</span><span> bar</span></div><div class="mst ok"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Safe low pressure">Tekanan rendah aman</span></div></div>
+    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-clock"></i></div><div class="mlb"><span data-i18n data-en="Consumption Rate">Laju Konsumsi</span></div><div class="mv" style="font-size:16px"><span id="t3-rate">3.2</span><span> <span data-i18n data-en="L/hr">L/jam</span></span></div><div class="mst neu"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="Normal usage">Pemakaian normal</span></div></div>
   </div>
   <div class="g3">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-circle-dot"></i> Gauge Kapasitas</div>
-      <div class="gdc" style="height:155px"><canvas id="ch-gauge" width="155" height="155"></canvas><div class="gdt"><div class="gdt-v" id="t3-pct">73%</div><div class="gdt-l">kapasitas</div></div></div>
-      <div class="sbs sb2" style="margin-top:7px"><div class="sbx"><div class="sbx-v" id="t3-vol" style="color:var(--eco)">146</div><div class="sbx-l">Liter tersimpan</div></div><div class="sbx"><div class="sbx-v" id="t3-prs" style="color:var(--blue)">0.8</div><div class="sbx-l">bar tekanan</div></div></div>
+      <div class="ct"><i class="fa-solid fa-circle-dot"></i> <span data-i18n data-en="Capacity Gauge">Gauge Kapasitas</span></div>
+      <div class="gdc" style="height:155px"><canvas id="ch-gauge" width="155" height="155"></canvas><div class="gdt"><div class="gdt-v" id="t3-pct">73%</div><div class="gdt-l"><span data-i18n data-en="capacity">kapasitas</span></div></div></div>
+      <div class="sbs sb2" style="margin-top:7px"><div class="sbx"><div class="sbx-v" id="t3-vol" style="color:var(--eco)">146</div><div class="sbx-l"><span data-i18n data-en="Liters stored">Liter tersimpan</span></div></div><div class="sbx"><div class="sbx-v" id="t3-prs" style="color:var(--blue)">0.8</div><div class="sbx-l"><span data-i18n data-en="bar pressure">bar tekanan</span></div></div></div>
     </div>
     <div style="grid-column:span 2;display:flex;flex-direction:column;gap:12px">
-      <div class="rt"><div class="rt-l"><i class="fa-solid fa-hourglass-half"></i>&nbsp; Estimasi Sisa Pasokan Gas</div><div class="rt-v" id="rtclk">18:32:00</div><div class="rt-s">Jam : Menit : Detik &middot; Generator aerator kolam lele 24 jam</div></div>
+      <div class="rt"><div class="rt-l"><i class="fa-solid fa-hourglass-half"></i>&nbsp; <span data-i18n data-en="Estimated Remaining Gas Supply">Estimasi Sisa Pasokan Gas</span></div><div class="rt-v" id="rtclk">18:32:00</div><div class="rt-s"><span data-i18n data-en="Hours : Minutes : Seconds &middot; 24-hour pond aerator generator">Jam : Menit : Detik &middot; Generator aerator kolam lele 24 jam</span></div></div>
       <div class="g2" style="margin-bottom:0">
-        <div class="c"><div class="ct"><i class="fa-solid fa-chart-pie"></i> Alokasi Gas Metana</div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><div style="width:120px;height:120px;flex-shrink:0"><canvas id="ch-alloc" width="120" height="120"></canvas></div><div style="flex:1;min-width:100px;font-size:10.5px"><div style="margin-bottom:8px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div style="width:9px;height:9px;background:var(--eco);border-radius:2px;flex-shrink:0"></div><span style="font-weight:700">75% Generator</span></div><div style="color:var(--txm);font-size:9.5px">Aerasi 24 jam &middot; Substitusi PLN</div></div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div style="width:9px;height:9px;background:#60a5fa;border-radius:2px;flex-shrink:0"></div><span style="font-weight:700">25% Gas Masak</span></div><div style="color:var(--txm);font-size:9.5px">Pengganti LPG rumah tangga</div></div></div></div></div>
-        <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> Histori Volume (24 Jam)</div><div class="cw sm"><canvas id="ch-t3h"></canvas></div></div>
+        <div class="c"><div class="ct"><i class="fa-solid fa-chart-pie"></i> <span data-i18n data-en="Methane Gas Allocation">Alokasi Gas Metana</span></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><div style="width:120px;height:120px;flex-shrink:0"><canvas id="ch-alloc" width="120" height="120"></canvas></div><div style="flex:1;min-width:100px;font-size:10.5px"><div style="margin-bottom:8px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div style="width:9px;height:9px;background:var(--eco);border-radius:2px;flex-shrink:0"></div><span style="font-weight:700">75% Generator</span></div><div style="color:var(--txm);font-size:9.5px"><span data-i18n data-en="24-hour aeration &middot; Grid substitution">Aerasi 24 jam &middot; Substitusi PLN</span></div></div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div style="width:9px;height:9px;background:#60a5fa;border-radius:2px;flex-shrink:0"></div><span style="font-weight:700">25% <span data-i18n data-en="Cooking Gas">Gas Masak</span></span></div><div style="color:var(--txm);font-size:9.5px"><span data-i18n data-en="Household LPG replacement">Pengganti LPG rumah tangga</span></div></div></div></div></div>
+        <div class="c"><div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="Volume History (24 Hours)">Histori Volume (24 Jam)</span></div><div class="cw sm"><canvas id="ch-t3h"></canvas></div></div>
       </div>
     </div>
   </div>
@@ -677,74 +678,74 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 
 <!-- SIMULATOR SKENARIO -->
 <div id="pg-sim" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-sliders"></i> Simulator Skenario</h1><p>Geser volume limbah masuk untuk melihat perkiraan dampaknya pada output sistem &middot; Model estimasi berbasis parameter desain SIRKUL</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-sliders"></i> <span data-i18n data-en="Scenario Simulator">Simulator Skenario</span></h1><p><span data-i18n data-en="Slide the incoming waste volume to see its estimated impact on system output &middot; Estimation model based on SIRKUL design parameters">Geser volume limbah masuk untuk melihat perkiraan dampaknya pada output sistem &middot; Model estimasi berbasis parameter desain SIRKUL</span></p></div></div>
 
   <div class="c mb">
-    <div class="ct"><i class="fa-solid fa-jug-detergent"></i> Volume Limbah Organik per Siklus (21 hari)</div>
+    <div class="ct"><i class="fa-solid fa-jug-detergent"></i> <span data-i18n data-en="Organic Waste Volume per Cycle (21 days)">Volume Limbah Organik per Siklus (21 hari)</span></div>
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
       <input type="range" id="sim-slider" min="150" max="600" step="10" value="200" style="flex:1;min-width:200px;accent-color:#1a5c38;height:6px">
       <div style="font-family:var(--mono);font-size:22px;font-weight:700;color:var(--eco3);min-width:110px" id="sim-vol-lb">200 L</div>
     </div>
-    <div style="font-size:9.5px;color:var(--txm);margin-top:6px">Kapasitas minimum sistem: 200 L per siklus &middot; geser untuk simulasi UMKM skala lebih besar</div>
+    <div style="font-size:9.5px;color:var(--txm);margin-top:6px"><span data-i18n data-en="Minimum system capacity: 200 L per cycle &middot; slide to simulate a larger-scale UMKM">Kapasitas minimum sistem: 200 L per siklus &middot; geser untuk simulasi UMKM skala lebih besar</span></div>
   </div>
 
   <div class="g4 mb">
-    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="mlb">Estimasi Biogas / Siklus</div><div class="mv"><span id="sim-bio">1,124</span><span> L</span></div><div class="mst ok"><i class="fa-solid fa-arrow-up"></i> per 21 hari</div></div>
-    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-jug-detergent"></i></div><div class="mlb">Estimasi POC / Siklus</div><div class="mv"><span id="sim-poc">180</span><span> L</span></div><div class="mst neu">Pupuk organik cair</div></div>
-    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-worm"></i></div><div class="mlb">Estimasi Maggot / Siklus</div><div class="mv"><span id="sim-mag">8.5</span><span> kg</span></div><div class="mst neu">Media sludge padat</div></div>
-    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-gauge-high"></i></div><div class="mlb">Estimasi Energi Termal</div><div class="mv"><span id="sim-thermal">71</span><span> MJ</span></div><div class="mst neu">per siklus 21 hari</div></div>
+    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="mlb"><span data-i18n data-en="Estimated Biogas / Cycle">Estimasi Biogas / Siklus</span></div><div class="mv"><span id="sim-bio">1,124</span><span> L</span></div><div class="mst ok"><i class="fa-solid fa-arrow-up"></i> <span data-i18n data-en="per 21 days">per 21 hari</span></div></div>
+    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-jug-detergent"></i></div><div class="mlb"><span data-i18n data-en="Estimated POC / Cycle">Estimasi POC / Siklus</span></div><div class="mv"><span id="sim-poc">180</span><span> L</span></div><div class="mst neu"><span data-i18n data-en="Liquid organic fertilizer">Pupuk organik cair</span></div></div>
+    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-worm"></i></div><div class="mlb"><span data-i18n data-en="Estimated Maggot / Cycle">Estimasi Maggot / Siklus</span></div><div class="mv"><span id="sim-mag">8.5</span><span> kg</span></div><div class="mst neu"><span data-i18n data-en="Solid sludge medium">Media sludge padat</span></div></div>
+    <div class="c mc"><div class="mic mp"><i class="fa-solid fa-gauge-high"></i></div><div class="mlb"><span data-i18n data-en="Estimated Thermal Energy">Estimasi Energi Termal</span></div><div class="mv"><span id="sim-thermal">71</span><span> MJ</span></div><div class="mst neu"><span data-i18n data-en="per 21-day cycle">per siklus 21 hari</span></div></div>
   </div>
 
   <div class="c">
-    <div class="ct"><i class="fa-solid fa-chart-simple"></i> Perbandingan terhadap Kapasitas Dasar (200 L)</div>
+    <div class="ct"><i class="fa-solid fa-chart-simple"></i> <span data-i18n data-en="Comparison to Base Capacity (200 L)">Perbandingan terhadap Kapasitas Dasar (200 L)</span></div>
     <div class="pb"><div class="pb-row"><span>Biogas</span><span id="sim-bio-pct">100%</span></div><div class="pbt" style="height:16px"><div class="pbf pf-g" id="sim-bio-bar" style="width:100%">100%</div></div></div>
     <div class="pb"><div class="pb-row"><span>POC</span><span id="sim-poc-pct">100%</span></div><div class="pbt" style="height:16px"><div class="pbf pf-ok" id="sim-poc-bar" style="width:100%">100%</div></div></div>
     <div class="pb" style="margin-bottom:0"><div class="pb-row"><span>Maggot</span><span id="sim-mag-pct">100%</span></div><div class="pbt" style="height:16px"><div class="pbf pf-w" id="sim-mag-bar" style="width:100%">100%</div></div></div>
   </div>
-  <div class="sim-note">Model estimasi linear sederhana berbasis rasio output dasar 200 L &middot; hasil aktual di lapangan dapat bervariasi</div>
+  <div class="sim-note"><span data-i18n data-en="Simple linear estimation model based on the 200 L base output ratio &middot; actual field results may vary">Model estimasi linear sederhana berbasis rasio output dasar 200 L &middot; hasil aktual di lapangan dapat bervariasi</span></div>
 </div>
 
 <!-- AI PREDIKSI -->
 <div id="pg-ai" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-brain"></i> AI Prediksi &amp; Analisis Cerdas</h1><p>Model prediktif berbasis data historis sensor &middot; Deteksi anomali dini &middot; Rekomendasi preventif otomatis</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-brain"></i> <span data-i18n data-en="AI Prediction &amp; Smart Analysis">AI Prediksi &amp; Analisis Cerdas</span></h1><p><span data-i18n data-en="Predictive model based on historical sensor data &middot; Early anomaly detection &middot; Automatic preventive recommendations">Model prediktif berbasis data historis sensor &middot; Deteksi anomali dini &middot; Rekomendasi preventif otomatis</span></p></div></div>
   <div class="g2">
     <div>
       <div class="ai-card mb">
-        <div class="ai-head"><div class="ai-dot"></div><div class="ai-title">Prediksi AI &mdash; 24 Jam ke Depan</div></div>
-        <div class="ai-item"><div class="ai-icon">&#128293;</div><div class="ai-text"><strong>Puncak Produksi Biogas: Hari 13&ndash;15</strong>Berdasarkan tren hari 8&ndash;12, model memprediksi puncak 140&ndash;160 L/hari. Kondisi suhu dan pH saat ini mendukung prediksi ini.</div></div>
-        <div class="ai-item"><div class="ai-icon">&#9879;&#65039;</div><div class="ai-text"><strong>Penggantian Adsorben: ~Hari 16</strong>Berdasarkan laju kenaikan &#916;P, Ca(OH)&#8322; diperkirakan mencapai saturasi 80% sekitar hari ke-16.</div></div>
-        <div class="ai-item"><div class="ai-icon">&#127777;&#65039;</div><div class="ai-text"><strong>Risiko Penurunan Suhu: Rendah</strong>Suhu reaktor stabil di 35.0&ndash;35.5&deg;C. Tidak ada tanda anomali termal dalam 6 jam ke depan.</div></div>
-        <div class="ai-item"><div class="ai-icon">&#128167;</div><div class="ai-text"><strong>Estimasi Panen POC: Hari 21</strong>Volume POC diproyeksikan 180&ndash;195 L dengan kandungan NPK optimal setelah 21 hari fermentasi.</div></div>
+        <div class="ai-head"><div class="ai-dot"></div><div class="ai-title"><span data-i18n data-en="AI Prediction &mdash; Next 24 Hours">Prediksi AI &mdash; 24 Jam ke Depan</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#128293;</div><div class="ai-text"><span data-i18n data-en="<strong>Peak Biogas Production: Day 13&ndash;15</strong>Based on the day 8&ndash;12 trend, the model predicts a peak of 140&ndash;160 L/day. Current temperature and pH conditions support this prediction."><strong>Puncak Produksi Biogas: Hari 13&ndash;15</strong>Berdasarkan tren hari 8&ndash;12, model memprediksi puncak 140&ndash;160 L/hari. Kondisi suhu dan pH saat ini mendukung prediksi ini.</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#9879;&#65039;</div><div class="ai-text"><span data-i18n data-en="<strong>Adsorbent Replacement: ~Day 16</strong>Based on the rate of &#916;P increase, Ca(OH)&#8322; is expected to reach 80% saturation around day 16."><strong>Penggantian Adsorben: ~Hari 16</strong>Berdasarkan laju kenaikan &#916;P, Ca(OH)&#8322; diperkirakan mencapai saturasi 80% sekitar hari ke-16.</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#127777;&#65039;</div><div class="ai-text"><span data-i18n data-en="<strong>Temperature Drop Risk: Low</strong>Reactor temperature is stable at 35.0&ndash;35.5&deg;C. No signs of thermal anomaly in the next 6 hours."><strong>Risiko Penurunan Suhu: Rendah</strong>Suhu reaktor stabil di 35.0&ndash;35.5&deg;C. Tidak ada tanda anomali termal dalam 6 jam ke depan.</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#128167;</div><div class="ai-text"><span data-i18n data-en="<strong>POC Harvest Estimate: Day 21</strong>POC volume is projected at 180&ndash;195 L with optimal NPK content after 21 days of fermentation."><strong>Estimasi Panen POC: Hari 21</strong>Volume POC diproyeksikan 180&ndash;195 L dengan kandungan NPK optimal setelah 21 hari fermentasi.</span></div></div>
       </div>
       <div class="ai-card">
-        <div class="ai-head"><div class="ai-dot" style="background:#4ade80"></div><div class="ai-title">Rekomendasi Tindakan Preventif</div></div>
-        <div class="ai-item"><div class="ai-icon">&#128203;</div><div class="ai-text"><strong>Segera (0&ndash;24 jam)</strong>Pantau kadar H&#8322;S tiap 6 jam. Jika mendekati 4.0 ppm, lakukan penambahan Ca(OH)&#8322; preventif.</div></div>
-        <div class="ai-item"><div class="ai-icon">&#128295;</div><div class="ai-text"><strong>3&ndash;5 Hari ke Depan</strong>Pesan media Ca(OH)&#8322; pengganti untuk packed bed. Estimasi kebutuhan: 5&ndash;8 kg.</div></div>
-        <div class="ai-item"><div class="ai-icon">&#128202;</div><div class="ai-text"><strong>Hari 20&ndash;21: Panen &amp; Dokumentasi</strong>Siapkan wadah panen POC dan timbangan untuk BSF maggot.</div></div>
+        <div class="ai-head"><div class="ai-dot" style="background:#4ade80"></div><div class="ai-title"><span data-i18n data-en="Preventive Action Recommendations">Rekomendasi Tindakan Preventif</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#128203;</div><div class="ai-text"><span data-i18n data-en="<strong>Immediate (0&ndash;24 hours)</strong>Monitor H&#8322;S levels every 6 hours. If nearing 4.0 ppm, add Ca(OH)&#8322; preventively."><strong>Segera (0&ndash;24 jam)</strong>Pantau kadar H&#8322;S tiap 6 jam. Jika mendekati 4.0 ppm, lakukan penambahan Ca(OH)&#8322; preventif.</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#128295;</div><div class="ai-text"><span data-i18n data-en="<strong>Next 3&ndash;5 Days</strong>Order replacement Ca(OH)&#8322; media for the packed bed. Estimated requirement: 5&ndash;8 kg."><strong>3&ndash;5 Hari ke Depan</strong>Pesan media Ca(OH)&#8322; pengganti untuk packed bed. Estimasi kebutuhan: 5&ndash;8 kg.</span></div></div>
+        <div class="ai-item"><div class="ai-icon">&#128202;</div><div class="ai-text"><span data-i18n data-en="<strong>Day 20&ndash;21: Harvest &amp; Documentation</strong>Prepare POC harvest containers and scales for BSF maggot."><strong>Hari 20&ndash;21: Panen &amp; Dokumentasi</strong>Siapkan wadah panen POC dan timbangan untuk BSF maggot.</span></div></div>
       </div>
     </div>
     <div>
-      <div class="c mb"><div class="ct"><i class="fa-solid fa-chart-line"></i> Proyeksi Produksi Biogas Hari 1&ndash;21 + Confidence Band</div><div class="cw xl"><canvas id="ch-proj"></canvas></div></div>
-      <div class="c"><div class="ct"><i class="fa-solid fa-chart-bar"></i> Distribusi Frekuensi Suhu 7 Hari (Histogram)</div><div class="cw md"><canvas id="ch-hist"></canvas></div></div>
+      <div class="c mb"><div class="ct"><i class="fa-solid fa-chart-line"></i> <span data-i18n data-en="Biogas Production Projection Day 1&ndash;21 + Confidence Band">Proyeksi Produksi Biogas Hari 1&ndash;21 + Confidence Band</span></div><div class="cw xl"><canvas id="ch-proj"></canvas></div></div>
+      <div class="c"><div class="ct"><i class="fa-solid fa-chart-bar"></i> <span data-i18n data-en="7-Day Temperature Frequency Distribution (Histogram)">Distribusi Frekuensi Suhu 7 Hari (Histogram)</span></div><div class="cw md"><canvas id="ch-hist"></canvas></div></div>
     </div>
   </div>
-  <div class="c mb"><div class="ct"><i class="fa-solid fa-circle-nodes"></i> Korelasi Suhu&ndash;pH&ndash;Produksi Biogas (Scatter Plot)</div><div class="cw md"><canvas id="ch-scatter"></canvas></div></div>
+  <div class="c mb"><div class="ct"><i class="fa-solid fa-circle-nodes"></i> <span data-i18n data-en="Temperature&ndash;pH&ndash;Biogas Production Correlation (Scatter Plot)">Korelasi Suhu&ndash;pH&ndash;Produksi Biogas (Scatter Plot)</span></div><div class="cw md"><canvas id="ch-scatter"></canvas></div></div>
 </div>
 
 <!-- SENSOR STATUS -->
 <div id="pg-sensor" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-microchip"></i> Status Semua Sensor</h1><p>Matriks kondisi real-time seluruh sensor IoT &middot; Update setiap 3 detik otomatis</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-microchip"></i> <span data-i18n data-en="All Sensor Status">Status Semua Sensor</span></h1><p><span data-i18n data-en="Real-time condition matrix for all IoT sensors &middot; Auto-updates every 3 seconds">Matriks kondisi real-time seluruh sensor IoT &middot; Update setiap 3 detik otomatis</span></p></div></div>
   <div class="g3 mb">
-    <div class="c"><div class="ct" style="color:var(--eco)"><i class="fa-solid fa-flask"></i> Tabung 1 &middot; Bioreaktor</div><div class="sg-grid" id="sg-t1"></div></div>
-    <div class="c"><div class="ct"><i class="fa-solid fa-wind"></i> Tabung 2 &middot; Scrubber</div><div class="sg-grid" id="sg-t2"></div></div>
-    <div class="c"><div class="ct"><i class="fa-solid fa-gas-pump"></i> Tabung 3 &middot; Storage</div><div class="sg-grid" id="sg-t3"></div></div>
+    <div class="c"><div class="ct" style="color:var(--eco)"><i class="fa-solid fa-flask"></i> <span data-i18n data-en="Tank 1 &middot; Bioreactor">Tabung 1 &middot; Bioreaktor</span></div><div class="sg-grid" id="sg-t1"></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-wind"></i> <span data-i18n data-en="Tank 2 &middot; Scrubber">Tabung 2 &middot; Scrubber</span></div><div class="sg-grid" id="sg-t2"></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-gas-pump"></i> <span data-i18n data-en="Tank 3 &middot; Storage">Tabung 3 &middot; Storage</span></div><div class="sg-grid" id="sg-t3"></div></div>
   </div>
   <div class="g2">
-    <div class="c"><div class="ct"><i class="fa-solid fa-chart-bar"></i> Nilai Sensor vs Target (Radar)</div><div class="cw lg"><canvas id="ch-radar"></canvas></div></div>
+    <div class="c"><div class="ct"><i class="fa-solid fa-chart-bar"></i> <span data-i18n data-en="Sensor Value vs Target (Radar)">Nilai Sensor vs Target (Radar)</span></div><div class="cw lg"><canvas id="ch-radar"></canvas></div></div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-history"></i> Log Pembacaan Sensor (20 Terakhir)</div>
+      <div class="ct"><i class="fa-solid fa-history"></i> <span data-i18n data-en="Sensor Reading Log (Last 20)">Log Pembacaan Sensor (20 Terakhir)</span></div>
       <div class="tscroll">
-        <table class="tbl"><thead><tr><th>Waktu</th><th>Suhu &deg;C</th><th>pH</th><th>&#916;P kPa</th><th>CH&#8324; %</th><th>H&#8322;S ppm</th><th>Status</th></tr></thead><tbody id="sensor-log-body"></tbody></table>
+        <table class="tbl"><thead><tr><th><span data-i18n data-en="Time">Waktu</span></th><th><span data-i18n data-en="Temp.">Suhu</span> &deg;C</th><th>pH</th><th>&#916;P kPa</th><th>CH&#8324; %</th><th>H&#8322;S ppm</th><th><span data-i18n data-en="Status">Status</span></th></tr></thead><tbody id="sensor-log-body"></tbody></table>
       </div>
     </div>
   </div>
@@ -752,54 +753,54 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 
 <!-- PRODUK -->
 <div id="pg-produk" class="pg">
-  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-recycle"></i> Produk Turunan &amp; Resource Recovery</h1><p>Pilar I &amp; R &amp; L &middot; Ekonomi Sirkular &middot; Zero Waste 100%</p></div></div>
+  <div class="ph"><div class="ph-l"><h1><i class="fa-solid fa-recycle"></i> <span data-i18n data-en="By-products &amp; Resource Recovery">Produk Turunan &amp; Resource Recovery</span></h1><p><span data-i18n data-en="Pillar I &amp; R &amp; L &middot; Circular Economy &middot; 100% Zero Waste">Pilar I &amp; R &amp; L &middot; Ekonomi Sirkular &middot; Zero Waste 100%</span></p></div></div>
   <div class="ndc">
-    <div class="ndc-l"><i class="fa-solid fa-earth-asia"></i>&nbsp; Kontribusi SIRKUL terhadap Target NDC Indonesia 2030</div>
+    <div class="ndc-l"><i class="fa-solid fa-earth-asia"></i>&nbsp; <span data-i18n data-en="SIRKUL's Contribution to Indonesia's 2030 NDC Target">Kontribusi SIRKUL terhadap Target NDC Indonesia 2030</span></div>
     <div class="ndc-v">31.89%</div>
-    <div class="ndc-d">Reduksi emisi gas rumah kaca nasional &middot; SIRKUL menangkap CH&#8324; yang sebelumnya terlepas bebas ke atmosfer dari pembuangan limbah kolam terbuka &middot; Setiap siklus 21 hari = aksi mitigasi iklim nyata skala UMKM perikanan</div>
+    <div class="ndc-d"><span data-i18n data-en="National greenhouse gas emission reduction &middot; SIRKUL captures CH&#8324; that would otherwise be released freely into the atmosphere from open pond waste disposal &middot; Every 21-day cycle = real climate mitigation action at UMKM fishery scale">Reduksi emisi gas rumah kaca nasional &middot; SIRKUL menangkap CH&#8324; yang sebelumnya terlepas bebas ke atmosfer dari pembuangan limbah kolam terbuka &middot; Setiap siklus 21 hari = aksi mitigasi iklim nyata skala UMKM perikanan</span></div>
     <div class="sdg-row">
-      <div class="sdg" style="background:#FCC30B">7</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 7<br>Energi Bersih</div>
-      <div class="sdg" style="background:#BF8B2E">12</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 12<br>Produksi Berkelanjutan</div>
-      <div class="sdg" style="background:#3F7E44">13</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 13<br>Aksi Iklim</div>
+      <div class="sdg" style="background:#FCC30B">7</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 7<br><span data-i18n data-en="Clean Energy">Energi Bersih</span></div>
+      <div class="sdg" style="background:#BF8B2E">12</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 12<br><span data-i18n data-en="Sustainable Production">Produksi Berkelanjutan</span></div>
+      <div class="sdg" style="background:#3F7E44">13</div><div style="font-size:9.5px;color:rgba(255,255,255,.6)">SDG 13<br><span data-i18n data-en="Climate Action">Aksi Iklim</span></div>
     </div>
   </div>
   <div class="g2">
     <div class="pcd">
       <div class="pcd-ico">&#127807;</div>
-      <div class="pcd-nm">Pupuk Organik Cair (POC)</div>
-      <div class="pcd-sb">Fase Cair Tabung 1 &middot; Pilar I &middot; Biofertilizer NPK Alami</div>
-      <div class="pcd-stat"><div class="pcd-v">~180</div><div class="pcd-u">Liter/siklus</div></div>
+      <div class="pcd-nm"><span data-i18n data-en="Liquid Organic Fertilizer (POC)">Pupuk Organik Cair (POC)</span></div>
+      <div class="pcd-sb"><span data-i18n data-en="Tank 1 Liquid Phase &middot; Pillar I &middot; Natural NPK Biofertilizer">Fase Cair Tabung 1 &middot; Pilar I &middot; Biofertilizer NPK Alami</span></div>
+      <div class="pcd-stat"><div class="pcd-v">~180</div><div class="pcd-u"><span data-i18n data-en="Liters/cycle">Liter/siklus</span></div></div>
       <div class="pcd-div"></div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Kandungan NPK (Nitrogen, Fosfor, Kalium) tinggi alami</div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Berpotensi menjadi substitusi penuh pupuk kimia sintetis</div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Terbukti dapat meningkatkan pertumbuhan tanaman</div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> COD limbah berkurang hingga 82.6% sebelum diproses jadi pupuk</div>
-      <div style="margin-top:10px;display:flex;gap:5px;flex-wrap:wrap"><span class="badge bg-g" style="font-size:9.5px;padding:3px 8px">&#10003; Zero Waste</span><span class="badge bg-b" style="font-size:9.5px;padding:3px 8px">NPK Terverifikasi</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Naturally high NPK (Nitrogen, Phosphorus, Potassium) content">Kandungan NPK (Nitrogen, Fosfor, Kalium) tinggi alami</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Potential full substitute for synthetic chemical fertilizer">Berpotensi menjadi substitusi penuh pupuk kimia sintetis</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Proven to enhance plant growth">Terbukti dapat meningkatkan pertumbuhan tanaman</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Waste COD reduced by up to 82.6% before being processed into fertilizer">COD limbah berkurang hingga 82.6% sebelum diproses jadi pupuk</span></div>
+      <div style="margin-top:10px;display:flex;gap:5px;flex-wrap:wrap"><span class="badge bg-g" style="font-size:9.5px;padding:3px 8px">&#10003; Zero Waste</span><span class="badge bg-b" style="font-size:9.5px;padding:3px 8px"><span data-i18n data-en="NPK Verified">NPK Terverifikasi</span></span></div>
     </div>
     <div class="pcd">
       <div class="pcd-ico">&#129426;</div>
-      <div class="pcd-nm">Maggot Black Soldier Fly (BSF)</div>
-      <div class="pcd-sb">Fase Padat (Sludge) Tabung 1 &middot; Pilar R &middot; Pakan Ikan Protein Tinggi</div>
-      <div class="pcd-stat"><div class="pcd-v">42.5</div><div class="pcd-u">% protein baseline terverifikasi</div></div>
+      <div class="pcd-nm"><span data-i18n data-en="Black Soldier Fly (BSF) Maggot">Maggot Black Soldier Fly (BSF)</span></div>
+      <div class="pcd-sb"><span data-i18n data-en="Tank 1 Solid Phase (Sludge) &middot; Pillar R &middot; High-Protein Fish Feed">Fase Padat (Sludge) Tabung 1 &middot; Pilar R &middot; Pakan Ikan Protein Tinggi</span></div>
+      <div class="pcd-stat"><div class="pcd-v">42.5</div><div class="pcd-u"><span data-i18n data-en="% verified baseline protein">% protein baseline terverifikasi</span></div></div>
       <div class="pcd-div"></div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Kandungan protein 40&ndash;48%</div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Berpotensi hemat biaya pakan komersial hingga <strong>25&ndash;30%</strong></div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Media tumbuh optimal: sludge kaya serat &amp; nutrisi</div>
-      <div class="pcd-f"><i class="fa-solid fa-check"></i> Hermetia illucens &mdash; food conversion ratio terbaik</div>
-      <div style="margin-top:10px;display:flex;gap:5px;flex-wrap:wrap"><span class="badge bg-g" style="font-size:9.5px;padding:3px 8px">&#10003; Zero Waste</span><span class="badge bg-a" style="font-size:9.5px;padding:3px 8px">Protein 42.5%</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="40&ndash;48% protein content">Kandungan protein 40&ndash;48%</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Potential commercial feed cost savings up to">Berpotensi hemat biaya pakan komersial hingga</span> <strong>25&ndash;30%</strong></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Optimal growth medium: fiber &amp; nutrient-rich sludge">Media tumbuh optimal: sludge kaya serat &amp; nutrisi</span></div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> Hermetia illucens &mdash; <span data-i18n data-en="best food conversion ratio">food conversion ratio terbaik</span></div>
+      <div style="margin-top:10px;display:flex;gap:5px;flex-wrap:wrap"><span class="badge bg-g" style="font-size:9.5px;padding:3px 8px">&#10003; Zero Waste</span><span class="badge bg-a" style="font-size:9.5px;padding:3px 8px"><span data-i18n data-en="42.5% Protein">Protein 42.5%</span></span></div>
     </div>
   </div>
-  <div class="c mb"><div class="ct"><i class="fa-solid fa-chart-bar"></i> Perbandingan Output Lintas Siklus</div><div class="cw md"><canvas id="ch-produk"></canvas></div></div>
+  <div class="c mb"><div class="ct"><i class="fa-solid fa-chart-bar"></i> <span data-i18n data-en="Cross-Cycle Output Comparison">Perbandingan Output Lintas Siklus</span></div><div class="cw md"><canvas id="ch-produk"></canvas></div></div>
   <div class="c">
-    <div class="ct"><i class="fa-solid fa-table"></i> Riwayat Lengkap Output Per Siklus</div>
+    <div class="ct"><i class="fa-solid fa-table"></i> <span data-i18n data-en="Complete Output History Per Cycle">Riwayat Lengkap Output Per Siklus</span></div>
     <div class="tscroll">
       <table class="tbl">
-        <thead><tr><th>Siklus</th><th>Tanggal</th><th>Biogas (L)</th><th>CH&#8324;</th><th>POC (L)</th><th>Maggot (kg)</th><th>Protein %</th><th>Status</th></tr></thead>
+        <thead><tr><th><span data-i18n data-en="Cycle">Siklus</span></th><th><span data-i18n data-en="Date">Tanggal</span></th><th>Biogas (L)</th><th>CH&#8324;</th><th>POC (L)</th><th>Maggot (kg)</th><th>Protein %</th><th><span data-i18n data-en="Status">Status</span></th></tr></thead>
         <tbody>
-          <tr><td><strong>#001</strong></td><td>15 Jan&ndash;05 Feb 2026</td><td style="font-family:var(--mono);font-weight:700">1,847</td><td><span class="badge bg-g">88.2%</span></td><td>165</td><td>3.4</td><td>42.3%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
-          <tr><td><strong>#002</strong></td><td>10 Feb&ndash;02 Mar 2026</td><td style="font-family:var(--mono);font-weight:700">2,104</td><td><span class="badge bg-g">86.7%</span></td><td>172</td><td>3.8</td><td>43.1%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
-          <tr><td><strong>#003</strong></td><td>07 Mar&ndash;28 Mar 2026</td><td style="font-family:var(--mono);font-weight:700">1,992</td><td><span class="badge bg-a">83.1%</span></td><td>158</td><td>3.1</td><td>41.8%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
-          <tr><td><strong>#004 (aktif)</strong></td><td>01 Apr&ndash;Sekarang</td><td style="font-family:var(--mono);font-weight:700" id="cy-bio">1,124</td><td><span class="badge bg-g" id="cy-ch4">87.4%</span></td><td id="cy-poc">~180</td><td>&mdash;</td><td>42.5% (est.)</td><td><span class="badge bg-b">&#128260; Hari 12/21</span></td></tr>
+          <tr><td><strong>#001</strong></td><td><span data-i18n data-en="Jan 15&ndash;Feb 05, 2026">15 Jan&ndash;05 Feb 2026</span></td><td style="font-family:var(--mono);font-weight:700">1,847</td><td><span class="badge bg-g">88.2%</span></td><td>165</td><td>3.4</td><td>42.3%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
+          <tr><td><strong>#002</strong></td><td><span data-i18n data-en="Feb 10&ndash;Mar 02, 2026">10 Feb&ndash;02 Mar 2026</span></td><td style="font-family:var(--mono);font-weight:700">2,104</td><td><span class="badge bg-g">86.7%</span></td><td>172</td><td>3.8</td><td>43.1%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
+          <tr><td><strong>#003</strong></td><td><span data-i18n data-en="Mar 07&ndash;28, 2026">07 Mar&ndash;28 Mar 2026</span></td><td style="font-family:var(--mono);font-weight:700">1,992</td><td><span class="badge bg-a">83.1%</span></td><td>158</td><td>3.1</td><td>41.8%</td><td><span class="badge bg-g">Zero Waste &#10003;</span></td></tr>
+          <tr><td><strong>#004 (aktif)</strong></td><td><span data-i18n data-en="Apr 01&ndash;Present">01 Apr&ndash;Sekarang</span></td><td style="font-family:var(--mono);font-weight:700" id="cy-bio">1,124</td><td><span class="badge bg-g" id="cy-ch4">87.4%</span></td><td id="cy-poc">~180</td><td>&mdash;</td><td>42.5% (est.)</td><td><span class="badge bg-b">&#128260; <span data-i18n data-en="Day 12/21">Hari 12/21</span></span></td></tr>
         </tbody>
       </table>
     </div>
@@ -809,18 +810,18 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 <!-- LOG -->
 <div id="pg-log" class="pg">
   <div class="ph">
-    <div class="ph-l"><h1><i class="fa-solid fa-file-lines"></i> Log &amp; Laporan AI</h1><p>Audit trail anomali &middot; Rekomendasi mitigasi otomatis &middot; Riwayat sesi IoT aktif</p></div>
-    <div class="ph-r"><button class="btn btn-p btn-sm" onclick="exportPDF()"><i class="fa-solid fa-file-pdf"></i> Export PDF</button><button class="btn btn-o btn-sm" onclick="clearLogs()"><i class="fa-solid fa-trash"></i> Hapus</button><span style="font-size:10.5px;color:var(--txm)" id="lcount">0 entri</span></div>
+    <div class="ph-l"><h1><i class="fa-solid fa-file-lines"></i> <span data-i18n data-en="AI Log &amp; Reports">Log &amp; Laporan AI</span></h1><p><span data-i18n data-en="Anomaly audit trail &middot; Automatic mitigation recommendations &middot; Active IoT session history">Audit trail anomali &middot; Rekomendasi mitigasi otomatis &middot; Riwayat sesi IoT aktif</span></p></div>
+    <div class="ph-r"><button class="btn btn-p btn-sm" onclick="exportPDF()"><i class="fa-solid fa-file-pdf"></i> <span data-i18n data-en="Export PDF">Export PDF</span></button><button class="btn btn-o btn-sm" onclick="clearLogs()"><i class="fa-solid fa-trash"></i> <span data-i18n data-en="Clear">Hapus</span></button><span style="font-size:10.5px;color:var(--txm)" id="lcount">0 <span data-i18n data-en="entries">entri</span></span></div>
   </div>
   <div class="g4 mb">
-    <div class="c mc"><div class="mic mr"><i class="fa-solid fa-triangle-exclamation"></i></div><div class="mlb">Total DANGER</div><div class="mv"><span id="cnt-danger" style="color:var(--rose)">0</span></div><div class="mst neu">Anomali kritis</div></div>
-    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-circle-exclamation"></i></div><div class="mlb">Total WARNING</div><div class="mv"><span id="cnt-warn" style="color:var(--amber)">0</span></div><div class="mst neu">Peringatan</div></div>
-    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-circle-info"></i></div><div class="mlb">Total INFO</div><div class="mv"><span id="cnt-info">0</span></div><div class="mst neu">Informasi</div></div>
-    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-clock"></i></div><div class="mlb">Uptime Sesi</div><div class="mv"><span id="cnt-up" style="font-size:15px">00:00</span></div><div class="mst ok">Jam aktif</div></div>
+    <div class="c mc"><div class="mic mr"><i class="fa-solid fa-triangle-exclamation"></i></div><div class="mlb">Total DANGER</div><div class="mv"><span id="cnt-danger" style="color:var(--rose)">0</span></div><div class="mst neu"><span data-i18n data-en="Critical anomalies">Anomali kritis</span></div></div>
+    <div class="c mc"><div class="mic ma"><i class="fa-solid fa-circle-exclamation"></i></div><div class="mlb">Total WARNING</div><div class="mv"><span id="cnt-warn" style="color:var(--amber)">0</span></div><div class="mst neu"><span data-i18n data-en="Warnings">Peringatan</span></div></div>
+    <div class="c mc"><div class="mic mb2"><i class="fa-solid fa-circle-info"></i></div><div class="mlb">Total INFO</div><div class="mv"><span id="cnt-info">0</span></div><div class="mst neu"><span data-i18n data-en="Information">Informasi</span></div></div>
+    <div class="c mc"><div class="mic mg"><i class="fa-solid fa-clock"></i></div><div class="mlb"><span data-i18n data-en="Session Uptime">Uptime Sesi</span></div><div class="mv"><span id="cnt-up" style="font-size:15px">00:00</span></div><div class="mst ok"><span data-i18n data-en="Active hours">Jam aktif</span></div></div>
   </div>
   <div class="c">
     <div class="tscroll">
-      <table class="tbl"><thead><tr><th>Timestamp</th><th>Sensor</th><th>Konteks Bahaya</th><th>Rekomendasi Mitigasi AI</th><th>Level</th></tr></thead><tbody id="ltbody"><tr><td colspan="5" style="text-align:center;color:var(--txm);padding:24px">Belum ada anomali. Sistem berjalan normal.</td></tr></tbody></table>
+      <table class="tbl"><thead><tr><th>Timestamp</th><th>Sensor</th><th><span data-i18n data-en="Hazard Context">Konteks Bahaya</span></th><th><span data-i18n data-en="AI Mitigation Recommendation">Rekomendasi Mitigasi AI</span></th><th>Level</th></tr></thead><tbody id="ltbody"><tr><td colspan="5" style="text-align:center;color:var(--txm);padding:24px"><span data-i18n data-en="No anomalies yet. System running normally.">Belum ada anomali. Sistem berjalan normal.</span></td></tr></tbody></table>
     </div>
   </div>
 </div>
@@ -828,34 +829,34 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
 <!-- CONFIG -->
 <div id="pg-cfg" class="pg">
   <div class="ph">
-    <div class="ph-l"><h1><i class="fa-solid fa-sliders"></i> Pengaturan Threshold Parameter</h1><p>Konfigurasi batas sensor aktif &middot; Perubahan langsung mengubah logika alarm real-time</p></div>
-    <div class="ph-r"><button class="btn btn-p btn-sm" onclick="saveCfg()"><i class="fa-solid fa-floppy-disk"></i> Simpan</button><button class="btn btn-o btn-sm" onclick="resetCfg()"><i class="fa-solid fa-rotate-left"></i> Reset</button></div>
+    <div class="ph-l"><h1><i class="fa-solid fa-sliders"></i> <span data-i18n data-en="Parameter Threshold Settings">Pengaturan Threshold Parameter</span></h1><p><span data-i18n data-en="Active sensor limit configuration &middot; Changes immediately affect real-time alarm logic">Konfigurasi batas sensor aktif &middot; Perubahan langsung mengubah logika alarm real-time</span></p></div>
+    <div class="ph-r"><button class="btn btn-p btn-sm" onclick="saveCfg()"><i class="fa-solid fa-floppy-disk"></i> <span data-i18n data-en="Save">Simpan</span></button><button class="btn btn-o btn-sm" onclick="resetCfg()"><i class="fa-solid fa-rotate-left"></i> <span data-i18n data-en="Reset">Reset</span></button></div>
   </div>
   <div class="g2">
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-flask"></i> Tabung 1 &middot; Bioreaktor</div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">Suhu Maksimum</div><div class="sr-d">Batas atas mesofilik &middot; Default 40&deg;C</div></div><div class="sr-inp"><input class="si" type="number" id="set-tmax" value="40" step="0.5"><span class="su">&deg;C</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">Suhu Minimum</div><div class="sr-d">Batas bawah mesofilik &middot; Default 30&deg;C</div></div><div class="sr-inp"><input class="si" type="number" id="set-tmin" value="30" step="0.5"><span class="su">&deg;C</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">pH Minimum</div><div class="sr-d">Asiditas kritis metanogen &middot; Default 6.8</div></div><div class="sr-inp"><input class="si" type="number" id="set-phmin" value="6.8" step="0.1"><span class="su">pH</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">pH Maksimum</div><div class="sr-d">Alkalinitas berlebih &middot; Default 7.2</div></div><div class="sr-inp"><input class="si" type="number" id="set-phmax" value="7.2" step="0.1"><span class="su">pH</span></div></div>
+      <div class="ct"><i class="fa-solid fa-flask"></i> <span data-i18n data-en="Tank 1 &middot; Bioreactor">Tabung 1 &middot; Bioreaktor</span></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Maximum Temperature">Suhu Maksimum</span></div><div class="sr-d"><span data-i18n data-en="Upper mesophilic limit &middot; Default 40&deg;C">Batas atas mesofilik &middot; Default 40&deg;C</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-tmax" value="40" step="0.5"><span class="su">&deg;C</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Minimum Temperature">Suhu Minimum</span></div><div class="sr-d"><span data-i18n data-en="Lower mesophilic limit &middot; Default 30&deg;C">Batas bawah mesofilik &middot; Default 30&deg;C</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-tmin" value="30" step="0.5"><span class="su">&deg;C</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n">pH Minimum</div><div class="sr-d"><span data-i18n data-en="Critical methanogen acidity &middot; Default 6.8">Asiditas kritis metanogen &middot; Default 6.8</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-phmin" value="6.8" step="0.1"><span class="su">pH</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n">pH Maksimum</div><div class="sr-d"><span data-i18n data-en="Excess alkalinity &middot; Default 7.2">Alkalinitas berlebih &middot; Default 7.2</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-phmax" value="7.2" step="0.1"><span class="su">pH</span></div></div>
     </div>
     <div class="c">
-      <div class="ct"><i class="fa-solid fa-wind"></i> Tabung 2 &amp; 3</div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">&#916;P Maksimum Scrubber</div><div class="sr-d">Saturasi Ca(OH)&#8322; kritis &middot; Default 25.0 kPa</div></div><div class="sr-inp"><input class="si" type="number" id="set-dpmax" value="25.0" step="0.5"><span class="su">kPa</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">H&#8322;S Maksimum</div><div class="sr-d">Korosivitas generator &middot; Default 5.0 ppm</div></div><div class="sr-inp"><input class="si" type="number" id="set-h2smax" value="5.0" step="0.1"><span class="su">ppm</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">CH&#8324; Minimum Akseptabel</div><div class="sr-d">Batas layak bakar &middot; Default 80%</div></div><div class="sr-inp"><input class="si" type="number" id="set-ch4min" value="80" step="1"><span class="su">%</span></div></div>
-      <div class="sr"><div class="sr-i"><div class="sr-n">Volume Tangki Minimum</div><div class="sr-d">Peringatan kritis &middot; Default 10%</div></div><div class="sr-inp"><input class="si" type="number" id="set-vmin" value="10" step="1"><span class="su">%</span></div></div>
+      <div class="ct"><i class="fa-solid fa-wind"></i> <span data-i18n data-en="Tank 2 &amp; 3">Tabung 2 &amp; 3</span></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Maximum Scrubber &#916;P">&#916;P Maksimum Scrubber</span></div><div class="sr-d"><span data-i18n data-en="Critical Ca(OH)&#8322; saturation &middot; Default 25.0 kPa">Saturasi Ca(OH)&#8322; kritis &middot; Default 25.0 kPa</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-dpmax" value="25.0" step="0.5"><span class="su">kPa</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Maximum H&#8322;S">H&#8322;S Maksimum</span></div><div class="sr-d"><span data-i18n data-en="Generator corrosivity &middot; Default 5.0 ppm">Korosivitas generator &middot; Default 5.0 ppm</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-h2smax" value="5.0" step="0.1"><span class="su">ppm</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Minimum Acceptable CH&#8324;">CH&#8324; Minimum Akseptabel</span></div><div class="sr-d"><span data-i18n data-en="Combustible limit &middot; Default 80%">Batas layak bakar &middot; Default 80%</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-ch4min" value="80" step="1"><span class="su">%</span></div></div>
+      <div class="sr"><div class="sr-i"><div class="sr-n"><span data-i18n data-en="Minimum Tank Volume">Volume Tangki Minimum</span></div><div class="sr-d"><span data-i18n data-en="Critical warning &middot; Default 10%">Peringatan kritis &middot; Default 10%</span></div></div><div class="sr-inp"><input class="si" type="number" id="set-vmin" value="10" step="1"><span class="su">%</span></div></div>
     </div>
   </div>
   <div class="c">
-    <div class="ct"><i class="fa-solid fa-circle-info"></i> Informasi Sistem</div>
+    <div class="ct"><i class="fa-solid fa-circle-info"></i> <span data-i18n data-en="System Information">Informasi Sistem</span></div>
     <div class="igrid">
-      <div><span>Versi Firmware</span><strong>SIRKUL-AI v1.0.0</strong></div>
-      <div><span>Polling Interval</span><strong>3000 ms real-time</strong></div>
-      <div><span>Hari Inkubasi</span><strong>12 / 21 hari aktif</strong></div>
-      <div><span>Penulis</span><strong>Muhamad Daffa Amrulloh</strong></div>
-      <div><span>Institusi</span><strong>Politeknik Bhakti Asih</strong></div>
-      <div><span>Target NDC</span><strong>31.89% reduksi CH&#8324; 2030</strong></div>
+      <div><span><span data-i18n data-en="Firmware Version">Versi Firmware</span></span><strong>SIRKUL-AI v1.0.0</strong></div>
+      <div><span><span data-i18n data-en="Polling Interval">Polling Interval</span></span><strong>3000 ms real-time</strong></div>
+      <div><span><span data-i18n data-en="Incubation Day">Hari Inkubasi</span></span><strong>12 / 21 <span data-i18n data-en="active days">hari aktif</span></strong></div>
+      <div><span><span data-i18n data-en="Author">Penulis</span></span><strong>Muhamad Daffa Amrulloh</strong></div>
+      <div><span><span data-i18n data-en="Institution">Institusi</span></span><strong>Politeknik Bhakti Asih</strong></div>
+      <div><span>Target NDC</span><strong>31.89% <span data-i18n data-en="CH&#8324; reduction by 2030">reduksi CH&#8324; 2030</span></strong></div>
     </div>
   </div>
 </div>
@@ -868,14 +869,92 @@ Chart.defaults.color='#64748b';
 let T={tmax:40,tmin:30,phmax:7.2,phmin:6.8,dpmax:25,h2smax:5,ch4min:80,vmin:10};
 let S={bio:1124,ch4:87.4,tmp:35.2,ph:7.02,dp:12.4,h2s:2.8,kpa:1.2,pct:73,vol:146,rt:66720,ads:48.4,rate:3.2,waste:9.6,thermal:3.4,eff:86};
 let logs=[],dCnt=0,wCnt=0,iCnt=0,tick=0,sessSec=0,conCnt=0,sensorHist=[];
-const titles={dash:'Dashboard Utama Analytics',energy:'Neraca Energi · Hukum I Termodinamika',sim:'Simulator Skenario',t1:'Tabung 1 · Bioreaktor Anaerobik',t2:'Tabung 2 · Packed Bed Scrubber',t3:'Tabung 3 · Penyimpanan Gas',ai:'AI Prediksi & Analisis',sensor:'Status Semua Sensor',produk:'Produk Turunan & Resource Recovery',log:'Log & Laporan AI',cfg:'Pengaturan Threshold'};
+const titles={
+  id:{dash:'Dashboard Utama Analytics',energy:'Neraca Energi · Hukum I Termodinamika',sim:'Simulator Skenario',t1:'Tabung 1 · Bioreaktor Anaerobik',t2:'Tabung 2 · Packed Bed Scrubber',t3:'Tabung 3 · Penyimpanan Gas',ai:'AI Prediksi & Analisis',sensor:'Status Semua Sensor',produk:'Produk Turunan & Resource Recovery',log:'Log & Laporan AI',cfg:'Pengaturan Threshold'},
+  en:{dash:'Main Dashboard Analytics',energy:'Energy Balance · First Law of Thermodynamics',sim:'Scenario Simulator',t1:'Tank 1 · Anaerobic Bioreactor',t2:'Tank 2 · Packed Bed Scrubber',t3:'Tank 3 · Gas Storage',ai:'AI Prediction & Analysis',sensor:'All Sensor Status',produk:'By-products & Resource Recovery',log:'AI Log & Reports',cfg:'Threshold Settings'}
+};
+
+// ===== LANGUAGE ENGINE =====
+let currentLang='id';
+function applyLang(){
+  document.documentElement.lang = currentLang==='id' ? 'id' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    if(currentLang==='en'){
+      if(el.dataset.orig===undefined) el.dataset.orig = el.innerHTML;
+      el.innerHTML = el.dataset.en;
+    } else {
+      if(el.dataset.orig!==undefined) el.innerHTML = el.dataset.orig;
+    }
+  });
+  const activeNav=document.querySelector('.nav.on');
+  const pageId=activeNav ? Object.keys({dash:1,energy:1,sim:1,t1:1,t2:1,t3:1,ai:1,sensor:1,produk:1,log:1,cfg:1}).find(k=>document.getElementById('pg-'+k)&&document.getElementById('pg-'+k).classList.contains('on')) : 'dash';
+  if(pageId) document.getElementById('ptitle').textContent = titles[currentLang][pageId] || titles[currentLang].dash;
+  document.getElementById('lang-toggle').textContent = currentLang==='id' ? 'ID / EN' : 'EN / ID';
+  buildSG();
+  updateChartLang();
+}
+function updateChartLang(){
+  const dayLbl=Array.from({length:21},(_,i)=>L('H-','D-')+(i+1));
+  if(typeof cBio!=='undefined'){
+    cBio.data.labels=dayLbl;
+    cBio.data.datasets[0].label=L('Aktual (L)','Actual (L)');
+    cBio.data.datasets[1].label=L('Proyeksi AI','AI Projection');
+    cBio.update('none');
+  }
+  if(typeof cTrend!=='undefined'){
+    cTrend.data.datasets[0].label=L('Suhu °C','Temp. °C');
+    cTrend.data.datasets[1].label='pH';
+    cTrend.update('none');
+  }
+  if(typeof cT1!=='undefined'){
+    cT1.data.datasets[0].label=L('Suhu °C','Temp. °C');
+    cT1.data.datasets[1].label='pH';
+    cT1.data.datasets[2].label=L('Tekanan bar','Pressure bar');
+    cT1.update('none');
+  }
+  if(typeof cT2!=='undefined'){
+    cT2.data.datasets[0].label='ΔP kPa';
+    cT2.data.datasets[1].label='CH₄ %';
+    cT2.update('none');
+  }
+  if(typeof cProj!=='undefined'){
+    cProj.data.labels=dayLbl;
+    cProj.data.datasets[0].label=L('Aktual (L)','Actual (L)');
+    cProj.data.datasets[1].label=L('Proyeksi AI','AI Projection');
+    cProj.data.datasets[2].label=L('Batas Bawah','Lower Bound');
+    cProj.data.datasets[3].label=L('Batas Atas','Upper Bound');
+    cProj.update('none');
+  }
+  if(typeof cScatter!=='undefined'){
+    cScatter.data.datasets[0].label=L('Suhu vs pH (ukuran = produksi)','Temp. vs pH (size = production)');
+    cScatter.options.scales.x.title.text=L('Suhu (°C)','Temp. (°C)');
+    cScatter.update('none');
+  }
+  if(typeof cRadar!=='undefined'){
+    cRadar.data.labels=[L('Suhu (norm.)','Temp. (norm.)'),L('pH (norm.)','pH (norm.)'),'CH₄ %',L('ΔP (inv.)','ΔP (inv.)'),L('H₂S (inv.)','H₂S (inv.)'),L('Volume %','Volume %')];
+    cRadar.data.datasets[0].label=L('Nilai Aktual','Actual Value');
+    cRadar.data.datasets[1].label=L('Target Optimal','Optimal Target');
+    cRadar.update('none');
+  }
+  if(typeof cEnergyTrend!=='undefined'){
+    cEnergyTrend.data.datasets[0].label=L('Efisiensi %','Efficiency %');
+    cEnergyTrend.data.datasets[1].label=L('Energi Termal MJ/jam','Thermal Energy MJ/hr');
+    cEnergyTrend.update('none');
+  }
+}
+
+function toggleLang(){
+  currentLang = currentLang==='id' ? 'en' : 'id';
+  applyLang();
+}
+function L(idStr,enStr){ return currentLang==='id' ? idStr : enStr; }
 
 function go(id,el){
   document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.nav').forEach(n=>n.classList.remove('on'));
   document.getElementById('pg-'+id).classList.add('on');
   el.classList.add('on');
-  document.getElementById('ptitle').textContent=titles[id];
+  document.getElementById('ptitle').textContent=titles[currentLang][id];
   closeSB();
 }
 
@@ -995,7 +1074,7 @@ function addLog(sensor,ctx,mit,lvl){
   const box=document.getElementById('con');
   const cls=lvl==='DANGER'?'bad':lvl==='WARNING'?'warn':'info';
   const line=document.createElement('div');line.className='ll '+cls;
-  line.innerHTML='<span class="lt">['+n.toLocaleTimeString('id-ID')+']</span>['+lvl+'] <strong>'+sensor+'</strong>: '+ctx;
+  line.innerHTML='<span class="lt">['+n.toLocaleTimeString(currentLang==='id'?'id-ID':'en-US')+']</span>['+lvl+'] <strong>'+sensor+'</strong>: '+ctx;
   box.insertBefore(line,box.firstChild);while(box.children.length>40)box.removeChild(box.lastChild);
   document.getElementById('con-cnt').textContent=conCnt+' event';
   renderLog();
@@ -1005,21 +1084,21 @@ function addLog(sensor,ctx,mit,lvl){
 }
 function renderLog(){
   const tb=document.getElementById('ltbody');
-  tb.innerHTML=logs.length===0?'<tr><td colspan="5" style="text-align:center;color:var(--txm);padding:24px">Belum ada anomali.</td></tr>':
+  tb.innerHTML=logs.length===0?'<tr><td colspan="5" style="text-align:center;color:var(--txm);padding:24px">'+L('Belum ada anomali.','No anomalies yet.')+'</td></tr>':
     logs.map(l=>'<tr><td style="font-family:var(--mono);font-size:9px;white-space:nowrap;color:var(--txm)">'+l.ts+'</td><td style="font-weight:700;font-size:10.5px">'+l.sensor+'</td><td style="font-size:10.5px">'+l.ctx+'</td><td style="font-size:10px;color:var(--eco);font-style:italic;line-height:1.4">'+l.mit+'</td><td><span class="badge '+l.bc+'">'+l.lvl+'</span></td></tr>').join('');
   document.getElementById('lcount').textContent=logs.length+' entri';
   document.getElementById('cnt-danger').textContent=dCnt;
   document.getElementById('cnt-warn').textContent=wCnt;
   document.getElementById('cnt-info').textContent=iCnt;
 }
-function clearLogs(){logs=[];dCnt=0;wCnt=0;iCnt=0;document.getElementById('nb').textContent='0';document.getElementById('alert-pill').style.display='none';renderLog();document.getElementById('con').innerHTML='<div class="ll sys"><span class="lt">[SYS]</span> Log dibersihkan operator.</div>';conCnt=0;document.getElementById('con-cnt').textContent='0 event';toast('Log berhasil dihapus.');}
-function exportPDF(){toast('Laporan PDF sedang disiapkan... (memerlukan backend server)');}
+function clearLogs(){logs=[];dCnt=0;wCnt=0;iCnt=0;document.getElementById('nb').textContent='0';document.getElementById('alert-pill').style.display='none';renderLog();document.getElementById('con').innerHTML='<div class="ll sys"><span class="lt">[SYS]</span> '+L('Log dibersihkan operator.','Log cleared by operator.')+'</div>';conCnt=0;document.getElementById('con-cnt').textContent='0 event';toast(L('Log berhasil dihapus.','Log successfully cleared.'));}
+function exportPDF(){toast(L('Laporan PDF sedang disiapkan... (memerlukan backend server)','PDF report is being prepared... (requires backend server)'));}
 
 function buildSG(){
-  const t1=[{nm:'Suhu Reaktor',ic:'fa-thermometer-half',val:S.tmp.toFixed(1),unit:'°C',ok:S.tmp>=T.tmin&&S.tmp<=T.tmax,clr:'#d97706'},{nm:'pH Reaktor',ic:'fa-flask',val:S.ph.toFixed(2),unit:'',ok:S.ph>=T.phmin&&S.ph<=T.phmax,clr:'#2563eb'},{nm:'Tekanan T1',ic:'fa-compress',val:S.kpa.toFixed(1),unit:'bar',ok:true,clr:'#7c3aed'},{nm:'Viabilitas',ic:'fa-bacteria',val:(S.tmp>=T.tmin&&S.tmp<=T.tmax&&S.ph>=T.phmin&&S.ph<=T.phmax)?'Aktif':'Lemah',unit:'',ok:S.tmp>=T.tmin&&S.tmp<=T.tmax&&S.ph>=T.phmin&&S.ph<=T.phmax,clr:'#16a34a'}];
-  const t2=[{nm:'Diff Pressure',ic:'fa-gauge',val:S.dp.toFixed(1),unit:'kPa',ok:S.dp<T.dpmax,clr:'#e11d48'},{nm:'Kemurnian CH₄',ic:'fa-atom',val:S.ch4.toFixed(1),unit:'%',ok:S.ch4>=T.ch4min,clr:'#2563eb'},{nm:'Kadar H₂S',ic:'fa-skull-crossbones',val:S.h2s.toFixed(1),unit:'ppm',ok:S.h2s<T.h2smax,clr:'#dc2626'},{nm:'Saturasi Ads.',ic:'fa-filter',val:S.ads.toFixed(0),unit:'%',ok:S.ads<80,clr:'#d97706'}];
-  const t3=[{nm:'Kapasitas',ic:'fa-circle-dot',val:S.pct,unit:'%',ok:S.pct>=T.vmin,clr:'#1a5c38'},{nm:'Volume Gas',ic:'fa-cubes',val:Math.round(S.vol),unit:'L',ok:true,clr:'#1a5c38'},{nm:'Tekanan T3',ic:'fa-compress-arrows-alt',val:S.kpa.toFixed(2),unit:'bar',ok:true,clr:'#2563eb'},{nm:'Laju Pakai',ic:'fa-gauge-high',val:S.rate.toFixed(1),unit:'L/h',ok:true,clr:'#7c3aed'}];
-  function rSG(id,items){const el=document.getElementById(id);if(!el)return;el.innerHTML=items.map(s=>`<div class="sg-item"><div class="sg-ico" style="background:${s.ok?'#dcfce7':'#fff1f2'}"><i class="fa-solid ${s.ic}" style="color:${s.ok?s.clr:'#e11d48'}"></i></div><div><div class="sg-nm">${s.nm}</div><div class="sg-vl" style="color:${s.ok?s.clr:'#e11d48'}">${s.val}${s.unit?' <span style="font-size:8.5px;color:var(--txm)">'+s.unit+'</span>':''}</div><div class="sg-st" style="color:${s.ok?'var(--mintd)':'var(--rose)'}">${s.ok?'● Normal':'● Anomali'}</div></div></div>`).join('');}
+  const t1=[{nm:L('Suhu Reaktor','Reactor Temp.'),ic:'fa-thermometer-half',val:S.tmp.toFixed(1),unit:'°C',ok:S.tmp>=T.tmin&&S.tmp<=T.tmax,clr:'#d97706'},{nm:L('pH Reaktor','Reactor pH'),ic:'fa-flask',val:S.ph.toFixed(2),unit:'',ok:S.ph>=T.phmin&&S.ph<=T.phmax,clr:'#2563eb'},{nm:L('Tekanan T1','Tank 1 Pressure'),ic:'fa-compress',val:S.kpa.toFixed(1),unit:'bar',ok:true,clr:'#7c3aed'},{nm:L('Viabilitas','Viability'),ic:'fa-bacteria',val:(S.tmp>=T.tmin&&S.tmp<=T.tmax&&S.ph>=T.phmin&&S.ph<=T.phmax)?L('Aktif','Active'):L('Lemah','Weak'),unit:'',ok:S.tmp>=T.tmin&&S.tmp<=T.tmax&&S.ph>=T.phmin&&S.ph<=T.phmax,clr:'#16a34a'}];
+  const t2=[{nm:L('Diff Pressure','Diff. Pressure'),ic:'fa-gauge',val:S.dp.toFixed(1),unit:'kPa',ok:S.dp<T.dpmax,clr:'#e11d48'},{nm:L('Kemurnian CH₄','CH₄ Purity'),ic:'fa-atom',val:S.ch4.toFixed(1),unit:'%',ok:S.ch4>=T.ch4min,clr:'#2563eb'},{nm:L('Kadar H₂S','H₂S Level'),ic:'fa-skull-crossbones',val:S.h2s.toFixed(1),unit:'ppm',ok:S.h2s<T.h2smax,clr:'#dc2626'},{nm:L('Saturasi Ads.','Adsorbent Sat.'),ic:'fa-filter',val:S.ads.toFixed(0),unit:'%',ok:S.ads<80,clr:'#d97706'}];
+  const t3=[{nm:L('Kapasitas','Capacity'),ic:'fa-circle-dot',val:S.pct,unit:'%',ok:S.pct>=T.vmin,clr:'#1a5c38'},{nm:L('Volume Gas','Gas Volume'),ic:'fa-cubes',val:Math.round(S.vol),unit:'L',ok:true,clr:'#1a5c38'},{nm:L('Tekanan T3','Tank 3 Pressure'),ic:'fa-compress-arrows-alt',val:S.kpa.toFixed(2),unit:'bar',ok:true,clr:'#2563eb'},{nm:L('Laju Pakai','Usage Rate'),ic:'fa-gauge-high',val:S.rate.toFixed(1),unit:'L/h',ok:true,clr:'#7c3aed'}];
+  function rSG(id,items){const el=document.getElementById(id);if(!el)return;el.innerHTML=items.map(s=>`<div class="sg-item"><div class="sg-ico" style="background:${s.ok?'#dcfce7':'#fff1f2'}"><i class="fa-solid ${s.ic}" style="color:${s.ok?s.clr:'#e11d48'}"></i></div><div><div class="sg-nm">${s.nm}</div><div class="sg-vl" style="color:${s.ok?s.clr:'#e11d48'}">${s.val}${s.unit?' <span style="font-size:8.5px;color:var(--txm)">'+s.unit+'</span>':''}</div><div class="sg-st" style="color:${s.ok?'var(--mintd)':'var(--rose)'}">${s.ok?'● '+L('Normal','Normal'):'● '+L('Anomali','Anomaly')}</div></div></div>`).join('');}
   rSG('sg-t1',t1);rSG('sg-t2',t2);rSG('sg-t3',t3);
 }
 
@@ -1028,7 +1107,7 @@ function addSR(){
   sensorHist.unshift({ts:n.toLocaleTimeString('id-ID'),tmp:S.tmp.toFixed(1),ph:S.ph.toFixed(2),dp:S.dp.toFixed(1),ch4:S.ch4.toFixed(1),h2s:S.h2s.toFixed(1),ok});
   if(sensorHist.length>20)sensorHist.pop();
   const tb=document.getElementById('sensor-log-body');if(!tb)return;
-  tb.innerHTML=sensorHist.map(r=>`<tr><td style="font-family:var(--mono);font-size:9.5px">${r.ts}</td><td>${r.tmp}</td><td>${r.ph}</td><td>${r.dp}</td><td>${r.ch4}</td><td>${r.h2s}</td><td><span class="badge ${r.ok?'bg-g':'bg-r'}">${r.ok?'OK':'Anomali'}</span></td></tr>`).join('');
+  tb.innerHTML=sensorHist.map(r=>`<tr><td style="font-family:var(--mono);font-size:9.5px">${r.ts}</td><td>${r.tmp}</td><td>${r.ph}</td><td>${r.dp}</td><td>${r.ch4}</td><td>${r.h2s}</td><td><span class="badge ${r.ok?'bg-g':'bg-r'}">${r.ok?'OK':L('Anomali','Anomaly')}</span></td></tr>`).join('');
 }
 
 function saveCfg(){
@@ -1037,121 +1116,29 @@ function saveCfg(){
   T.dpmax=+document.getElementById('set-dpmax').value;T.h2smax=+document.getElementById('set-h2smax').value;
   T.ch4min=+document.getElementById('set-ch4min').value;T.vmin=+document.getElementById('set-vmin').value;
   ['dp2-max','dp2-thr'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=T.dpmax.toFixed(1);});
-  toast('Threshold disimpan. Logika alarm diperbarui.');
+  toast(L('Threshold disimpan. Logika alarm diperbarui.','Threshold saved. Alarm logic updated.'));
 }
-function resetCfg(){document.getElementById('set-tmax').value=40;document.getElementById('set-tmin').value=30;document.getElementById('set-phmax').value=7.2;document.getElementById('set-phmin').value=6.8;document.getElementById('set-dpmax').value=25;document.getElementById('set-h2smax').value=5;document.getElementById('set-ch4min').value=80;document.getElementById('set-vmin').value=10;saveCfg();toast('Threshold direset ke nilai default penelitian.');}
+function resetCfg(){document.getElementById('set-tmax').value=40;document.getElementById('set-tmin').value=30;document.getElementById('set-phmax').value=7.2;document.getElementById('set-phmin').value=6.8;document.getElementById('set-dpmax').value=25;document.getElementById('set-h2smax').value=5;document.getElementById('set-ch4min').value=80;document.getElementById('set-vmin').value=10;saveCfg();toast(L('Threshold direset ke nilai default penelitian.','Threshold reset to research default values.'));}
 
 function cs(id,st){const el=document.getElementById(id);if(!el)return;el.classList.remove('cdanger','cwarn','cok');if(st!=='n')el.classList.add(st);}
 function sel(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
 function flashEl(id){const el=document.getElementById(id);if(!el)return;const card=el.closest('.mv')||el;card.classList.remove('flash');void card.offsetWidth;card.classList.add('flash');}
 
 // IoT LOOP
-setInterval(()=>{
-  tick++;
-  let td=(Math.random()-.5)*.6;if(tick%7===0)td+=(Math.random()>.5?1.8:-1.8);S.tmp=Math.max(24,Math.min(46,S.tmp+td));
-  let pd=(Math.random()-.5)*.05;if(tick%11===0)pd+=(Math.random()>.5?.15:-.15);S.ph=Math.max(5.5,Math.min(8.5,S.ph+pd));
-  let dd=(Math.random()-.38)*.5;if(tick%13===0)dd+=Math.random()*1.2;S.dp=Math.max(4,Math.min(36,S.dp+dd));
-  S.ads=Math.min(100,S.ads+.025*(S.dp/12));
-  let cd=(Math.random()-.5)*.6;if(S.dp>T.dpmax*.8)cd-=.3;S.ch4=Math.max(68,Math.min(97,S.ch4+cd));
-  let hd=(Math.random()-.5)*.3;if(S.dp>T.dpmax*.7)hd+=.15;S.h2s=Math.max(.4,Math.min(8.5,S.h2s+hd));
-  if(tick%2===0)S.bio=+(S.bio+2+Math.random()*4).toFixed(1);
-  if(tick%5===0){S.vol=Math.max(8,S.vol-.4);S.pct=Math.round(S.vol/200*100);}
-  S.kpa=+(1+Math.random()*.45).toFixed(2);S.rate=+(3+Math.random()*.5).toFixed(1);
-  S.waste=Math.max(7,Math.min(13,S.waste+(Math.random()-.5)*.6));
-  S.thermal=Math.max(2.4,Math.min(4.8,S.thermal+(Math.random()-.5)*.3));
-  S.eff=Math.max(76,Math.min(94,S.eff+(Math.random()-.5)*1.2));
 
-  const tOk=S.tmp>=T.tmin&&S.tmp<=T.tmax,tCrit=S.tmp<T.tmin-3||S.tmp>T.tmax+3;
-  const phOk=S.ph>=T.phmin&&S.ph<=T.phmax,phCrit=S.ph<T.phmin-.3||S.ph>T.phmax+.3;
-  const dpOk=S.dp<T.dpmax*.7,dpW=S.dp>=T.dpmax*.7&&S.dp<T.dpmax,dpD=S.dp>=T.dpmax;
-  const c4Ok=S.ch4>=85,c4W=S.ch4>=T.ch4min&&S.ch4<85,c4D=S.ch4<T.ch4min;
-  const h2W=S.h2s>=T.h2smax*.7&&S.h2s<T.h2smax,h2D=S.h2s>=T.h2smax;
+  
 
-  const bStr=Math.round(S.bio).toLocaleString('id-ID');
-  sel('mv-bio',bStr);sel('mv-ch4',S.ch4.toFixed(1));sel('mv-tmp',S.tmp.toFixed(1));sel('mv-dp',S.dp.toFixed(1));
-  if(tick%3===0){['mv-bio','mv-ch4','mv-tmp','mv-dp'].forEach(flashEl);}
-  sel('kpi-bio',bStr+' L');sel('kpi-ch4',S.ch4.toFixed(1)+'%');sel('kpi-tmp',S.tmp.toFixed(1)+'°C');sel('kpi-dp',S.dp.toFixed(1)+' kPa');sel('kpi-vol',S.pct+'%');
-  sel('sb-bio',bStr+' L');
-
-  // NERACA ENERGI page live update
-  sel('eb-waste',S.waste.toFixed(1));
-  sel('eb-biogas',(S.rate*6.75).toFixed(1));
-  sel('eb-ch4',S.ch4.toFixed(1));
-  sel('eb-thermal',S.thermal.toFixed(1));
-  sel('eff-pct',Math.round(S.eff)+'%');
-  if(typeof cEff!=='undefined'){cEff.data.datasets[0].data=[Math.round(S.eff),100-Math.round(S.eff)];cEff.update('none');}
-  if(typeof cEnergyTrend!=='undefined'){
-    cEnergyTrend.data.datasets[0].data.push(+S.eff.toFixed(1));cEnergyTrend.data.datasets[0].data.shift();
-    cEnergyTrend.data.datasets[1].data.push(+S.thermal.toFixed(1));cEnergyTrend.data.datasets[1].data.shift();
-    cEnergyTrend.update('none');
-  }
-  buildSankey();
-
-  function updCard(id,crit,warn,lblId,okTxt,warnTxt,critTxt){cs(id,crit?'cdanger':warn?'cwarn':'cok');const el=document.getElementById(lblId);if(el){el.className='mst '+(crit?'bad':warn?'warn':'ok');el.innerHTML=crit?'<i class="fa-solid fa-triangle-exclamation"></i> '+critTxt:warn?'<i class="fa-solid fa-circle-exclamation"></i> '+warnTxt:'<i class="fa-solid fa-check"></i> '+okTxt;}}
-  updCard('crd-tmp',tCrit,!tOk,'ms-tmp','Mesofilik optimal','Suhu menyimpang','KRITIS di luar batas');
-  updCard('crd-dp',dpD,dpW,'ms-dp','Normal <25 kPa','ΔP meningkat','BAHAYA kritis!');
-  updCard('crd-ch4',c4D,c4W,'ms-ch4','Melampaui 85%','Mendekati batas','DI BAWAH BATAS!');
-
-  document.getElementById('nd1').className='fc '+(tCrit||phCrit?'fc-r':!tOk||!phOk?'fc-a':'fc-g');
-  document.getElementById('nd2').className='fc '+(dpD||h2D?'fc-r':dpW||h2W?'fc-a':'fc-g');
-  document.getElementById('nd3').className='fc '+(S.pct<T.vmin?'fc-r':S.pct<20?'fc-a':'fc-b');
-
-  const anyD=tCrit||phCrit||dpD||h2D||c4D,anyW=!tOk||!phOk||dpW||h2W||c4W;
-  if(anyD){sel('sys-s','🚨 ANOMALI KRITIS TERDETEKSI');sel('sys-d','Segera periksa sensor merah. Intervensi manual diperlukan!');}
-  else if(anyW){sel('sys-s','⚠️ PERINGATAN AKTIF');sel('sys-d','Satu atau lebih parameter mendekati batas. Pantau ketat.');}
-  else{sel('sys-s','✅ SISTEM BERJALAN OPTIMAL');sel('sys-d','Semua parameter normal · Inkubasi hari 12/21 · '+bStr+' L biogas');}
-
-  sel('t1-tv',S.tmp.toFixed(1));sel('t1-pv',S.ph.toFixed(2));sel('t1-kv',S.kpa);
-  sel('t1-bact-tmp',S.tmp.toFixed(1));sel('t1-bact-ph',S.ph.toFixed(2));sel('t1-bact-kpa',S.kpa);
-  const bpct=Math.min(100,Math.max(0,100-Math.abs(S.tmp-35.2)*5-Math.abs(S.ph-7.0)*20)).toFixed(0);
-  sel('t1-bact-pct',bpct);
-  cs('t1-c-tmp',tCrit?'cdanger':!tOk?'cwarn':'cok');cs('t1-c-ph',phCrit?'cdanger':!phOk?'cwarn':'cok');
-  const ts=document.getElementById('t1-tst');if(ts){ts.className='mst '+(tCrit?'bad':!tOk?'warn':'ok');ts.innerHTML=tCrit?'<i class="fa-solid fa-triangle-exclamation"></i> KRITIS':!tOk?'<i class="fa-solid fa-circle-exclamation"></i> Peringatan':'<i class="fa-solid fa-check"></i> Target ~35.2°C';}
-  const ps=document.getElementById('t1-pst');if(ps){ps.className='mst '+(phCrit?'bad':!phOk?'warn':'ok');ps.innerHTML=phCrit?'<i class="fa-solid fa-triangle-exclamation"></i> KRITIS':!phOk?'<i class="fa-solid fa-circle-exclamation"></i> Peringatan':'<i class="fa-solid fa-check"></i> Rentang 6.8–7.2';}
-  let bs,bd;
-  if(phOk&&tOk){bs='✅ AKTIF OPTIMAL';bd='pH '+S.ph.toFixed(2)+' · Suhu '+S.tmp.toFixed(1)+'°C mesofilik · Viabilitas '+bpct+'%';}
-  else if(phCrit||tCrit){bs='🚨 KRITIS! BAKTERI STRES';bd='Kondisi ekstrem hambat metanogen! Intervensi segera!';}
-  else{bs='⚠️ AKTIVITAS MENURUN';bd=(!phOk?'pH '+S.ph.toFixed(2)+' di luar 6.8–7.2 ':'')+(!tOk?'Suhu '+S.tmp.toFixed(1)+'°C menyimpang':'');}
-  sel('t1-bs',bs);sel('t1-bd',bd);
-
-  sel('mv-dp2',S.dp.toFixed(1));sel('mv-ch4t2',S.ch4.toFixed(1));sel('mv-h2s',S.h2s.toFixed(1));sel('mv-ads',S.ads.toFixed(0));
-  cs('crd-dp2',dpD?'cdanger':dpW?'cwarn':'cok');
-  const dpNEl=document.getElementById('dp2-n');if(dpNEl){dpNEl.textContent=S.dp.toFixed(1);dpNEl.className='dp-n '+(dpD?'dp-bad':dpW?'dp-warn':'dp-ok');}
-  const dpBEl=document.getElementById('dp2-b');if(dpBEl){dpBEl.textContent=dpD?'⚠ KRITIS — GANTI ADSORBEN':dpW?'⚠ PERINGATAN ΔP Tinggi':'✓ NORMAL';dpBEl.className='dp-b '+(dpD?'dpb-bad':dpW?'dpb-warn':'dpb-ok');}
-  const bch=document.getElementById('bar-ch4');if(bch){bch.style.width=Math.min(100,S.ch4)+'%';bch.textContent=S.ch4.toFixed(1)+'%';bch.className='pbf '+(c4D?'pf-bad':c4W?'pf-w':'pf-g');}
-  const ch4lv=document.getElementById('ch4-lv');if(ch4lv){ch4lv.textContent=S.ch4.toFixed(1)+'%';ch4lv.style.color=c4D?'var(--rose)':c4W?'var(--amber)':'var(--eco)';}
-  const bh2=document.getElementById('bar-h2s');if(bh2){const hw=Math.min(100,(S.h2s/T.h2smax)*100);bh2.style.width=hw+'%';bh2.textContent=S.h2s.toFixed(1)+' ppm';bh2.className='pbf '+(h2D?'pf-bad':h2W?'pf-w':'pf-r');}
-  const h2lv=document.getElementById('h2s-lv');if(h2lv){h2lv.textContent=S.h2s.toFixed(1)+' ppm';}
-  const ab=document.getElementById('ads-bar');if(ab){const aw=Math.min(100,S.ads);ab.style.width=aw.toFixed(0)+'%';ab.textContent=aw.toFixed(0)+'%';ab.className='pbf '+(aw>80?'pf-bad':aw>60?'pf-w':'pf-ok');}
-  const mads=document.getElementById('ms-ads');if(mads){mads.className='mst '+(S.ads>80?'bad':S.ads>60?'warn':'neu');mads.innerHTML=S.ads>80?'<i class="fa-solid fa-triangle-exclamation"></i> Segera ganti!':S.ads>60?'<i class="fa-solid fa-circle-exclamation"></i> Mulai jenuh':'<i class="fa-solid fa-circle-dot"></i> Ca(OH)₂ aktif';}
-
-  sel('t3-pct',S.pct+'%');sel('t3-pct-mc',S.pct);sel('t3-vol',Math.round(S.vol));sel('t3-vol-mc',Math.round(S.vol));sel('t3-prs',S.kpa);sel('t3-kpa-mc',S.kpa);sel('t3-rate',S.rate);
-  cGauge.data.datasets[0].data=[S.pct,100-S.pct];cGauge.update('none');
-
-  sel('cy-bio',Math.round(S.bio).toLocaleString('id-ID'));sel('cy-ch4',S.ch4.toFixed(1)+'%');sel('cy-poc','~'+Math.round(S.vol*1.2));
-
-  trendBuf.tmp.push(+S.tmp.toFixed(2));trendBuf.tmp.shift();
-  trendBuf.ph.push(+S.ph.toFixed(3));trendBuf.ph.shift();
-  cTrend.data.datasets[0].data=[...trendBuf.tmp];cTrend.data.datasets[1].data=[...trendBuf.ph];cTrend.update('none');
-  cT2.data.datasets[0].data.push(+S.dp.toFixed(1));cT2.data.datasets[0].data.shift();
-  cT2.data.datasets[1].data.push(+S.ch4.toFixed(1));cT2.data.datasets[1].data.shift();
-  cT2.update('none');
-
-  if(tick%8===0){const box=document.getElementById('con'),n=new Date(),l=document.createElement('div');l.className='ll ok';l.innerHTML='<span class="lt">['+n.toLocaleTimeString('id-ID')+']</span> #'+tick+' T='+S.tmp.toFixed(1)+'°C pH='+S.ph.toFixed(2)+' CH₄='+S.ch4.toFixed(1)+'% ΔP='+S.dp.toFixed(1)+'kPa ✓';box.insertBefore(l,box.firstChild);while(box.children.length>40)box.removeChild(box.lastChild);conCnt++;sel('con-cnt',conCnt+' event');}
-
-  buildSG();if(tick%2===0)addSR();
-
-  if(tCrit)addLog('Sensor Suhu · Tabung 1','Suhu '+S.tmp.toFixed(1)+'°C — '+(S.tmp>T.tmax?'terlalu tinggi':'terlalu rendah')+' · Batas '+T.tmin+'–'+T.tmax+'°C',S.tmp>T.tmax?'ALERT: Aktifkan pendinginan reaktor. Kurangi paparan sinar matahari. Periksa insulasi.':'ALERT: Tambahkan insulasi termal. Pertimbangkan pemanas tercelup 12V DC. Target ~35.2°C.','DANGER');
-  else if(!tOk&&tick%3===0)addLog('Sensor Suhu · Tabung 1','Suhu '+S.tmp.toFixed(1)+'°C mendekati batas mesofilik','WARNING: Pantau tiap 15 menit. Siapkan tindakan korektif bila tren berlanjut keluar 30–40°C.','WARNING');
-  if(phCrit)addLog('Sensor pH · Tabung 1','pH '+S.ph.toFixed(2)+' kritis di luar 6.8–7.2',S.ph<T.phmin?'ALERT: Asidifikasi kritis! Tambahkan larutan buffer NaHCO₃ bertahap. Kurangi loading bahan organik.':'ALERT: pH terlalu basa. Periksa kelebihan aktivator. Tambahkan asam asetat encer.','DANGER');
-  if(dpD)addLog('Sensor ΔP · Tabung 2 Scrubber','ΔP = '+S.dp.toFixed(1)+' kPa — MELAMPAUI BATAS '+T.dpmax+' kPa','ALERT: Adsorben Ca(OH)₂ jenuh akibat pembentukan CaCO₃. Segera ganti media filter Packed Bed!','DANGER');
-  else if(dpW&&tick%4===0)addLog('Sensor ΔP · Tabung 2 Scrubber','ΔP = '+S.dp.toFixed(1)+' kPa — mendekati batas ('+T.dpmax+' kPa)','WARNING: Jadwalkan penggantian Ca(OH)₂ dalam 24–48 jam.','WARNING');
-  if(h2D)addLog('Sensor H₂S · Tabung 2 Scrubber','H₂S = '+S.h2s.toFixed(1)+' ppm — MELEBIHI '+T.h2smax+' ppm','ALERT KRITIS: H₂S di atas ambang korosivitas! Hentikan aliran ke generator. Ganti Ca(OH)₂ segera.','DANGER');
-  if(c4D)addLog('Sensor CH₄ · Output Scrubber','CH₄ = '+S.ch4.toFixed(1)+'% — DI BAWAH MINIMUM '+T.ch4min+'%','ALERT: Kemurnian metana tidak memadai. Periksa efisiensi scrubber. Ganti adsorben.','DANGER');
-  if(S.pct<=T.vmin&&tick%8===0)addLog('Sensor Volume · Tabung 3 Storage','Volume = '+S.pct+'% — di bawah minimum '+T.vmin+'%','WARNING: Pasokan gas hampir habis. Siapkan cadangan PLN/genset solar.','WARNING');
+  if(tCrit)addLog(L('Sensor Suhu · Tabung 1','Temperature Sensor · Tank 1'),L('Suhu ','Temperature ')+S.tmp.toFixed(1)+'°C — '+(S.tmp>T.tmax?L('terlalu tinggi','too high'):L('terlalu rendah','too low'))+L(' · Batas ',' · Limit ')+T.tmin+'–'+T.tmax+'°C',S.tmp>T.tmax?L('ALERT: Aktifkan pendinginan reaktor. Kurangi paparan sinar matahari. Periksa insulasi.','ALERT: Activate reactor cooling. Reduce sunlight exposure. Check insulation.'):L('ALERT: Tambahkan insulasi termal. Pertimbangkan pemanas tercelup 12V DC. Target ~35.2°C.','ALERT: Add thermal insulation. Consider a 12V DC immersion heater. Target ~35.2°C.'),'DANGER');
+  else if(!tOk&&tick%3===0)addLog(L('Sensor Suhu · Tabung 1','Temperature Sensor · Tank 1'),L('Suhu ','Temperature ')+S.tmp.toFixed(1)+L('°C mendekati batas mesofilik','°C nearing mesophilic limit'),L('WARNING: Pantau tiap 15 menit. Siapkan tindakan korektif bila tren berlanjut keluar 30–40°C.','WARNING: Monitor every 15 minutes. Prepare corrective action if the trend continues outside 30–40°C.'),'WARNING');
+  if(phCrit)addLog(L('Sensor pH · Tabung 1','pH Sensor · Tank 1'),'pH '+S.ph.toFixed(2)+L(' kritis di luar 6.8–7.2',' critical, outside 6.8–7.2'),S.ph<T.phmin?L('ALERT: Asidifikasi kritis! Tambahkan larutan buffer NaHCO₃ bertahap. Kurangi loading bahan organik.','ALERT: Critical acidification! Gradually add NaHCO₃ buffer solution. Reduce organic loading.'):L('ALERT: pH terlalu basa. Periksa kelebihan aktivator. Tambahkan asam asetat encer.','ALERT: pH too alkaline. Check for excess activator. Add diluted acetic acid.'),'DANGER');
+  if(dpD)addLog(L('Sensor ΔP · Tabung 2 Scrubber','ΔP Sensor · Tank 2 Scrubber'),'ΔP = '+S.dp.toFixed(1)+L(' kPa — MELAMPAUI BATAS ',' kPa — EXCEEDS LIMIT ')+T.dpmax+' kPa',L('ALERT: Adsorben Ca(OH)₂ jenuh akibat pembentukan CaCO₃. Segera ganti media filter Packed Bed!','ALERT: Ca(OH)₂ adsorbent saturated due to CaCO₃ formation. Replace the Packed Bed filter media immediately!'),'DANGER');
+  else if(dpW&&tick%4===0)addLog(L('Sensor ΔP · Tabung 2 Scrubber','ΔP Sensor · Tank 2 Scrubber'),'ΔP = '+S.dp.toFixed(1)+L(' kPa — mendekati batas (',' kPa — nearing the limit (')+T.dpmax+' kPa)',L('WARNING: Jadwalkan penggantian Ca(OH)₂ dalam 24–48 jam.','WARNING: Schedule Ca(OH)₂ replacement within 24–48 hours.'),'WARNING');
+  if(h2D)addLog(L('Sensor H₂S · Tabung 2 Scrubber','H₂S Sensor · Tank 2 Scrubber'),'H₂S = '+S.h2s.toFixed(1)+L(' ppm — MELEBIHI ',' ppm — EXCEEDS ')+T.h2smax+' ppm',L('ALERT KRITIS: H₂S di atas ambang korosivitas! Hentikan aliran ke generator. Ganti Ca(OH)₂ segera.','CRITICAL ALERT: H₂S above the corrosivity threshold! Stop flow to the generator. Replace Ca(OH)₂ immediately.'),'DANGER');
+  if(c4D)addLog(L('Sensor CH₄ · Output Scrubber','CH₄ Sensor · Scrubber Output'),'CH₄ = '+S.ch4.toFixed(1)+L('% — DI BAWAH MINIMUM ','% — BELOW MINIMUM ')+T.ch4min+'%',L('ALERT: Kemurnian metana tidak memadai. Periksa efisiensi scrubber. Ganti adsorben.','ALERT: Methane purity is inadequate. Check scrubber efficiency. Replace adsorbent.'),'DANGER');
+  if(S.pct<=T.vmin&&tick%8===0)addLog(L('Sensor Volume · Tabung 3 Storage','Volume Sensor · Tank 3 Storage'),L('Volume = ','Volume = ')+S.pct+L('% — di bawah minimum ','% — below minimum ')+T.vmin+'%',L('WARNING: Pasokan gas hampir habis. Siapkan cadangan PLN/genset solar.','WARNING: Gas supply nearly depleted. Prepare grid/solar generator backup.'),'WARNING');
 },3000);
 
-saveCfg();buildSG();
+saveCfg();buildSG();applyLang();
 </script>
 </body>
-</html>
+                                                                                                                                                                                                                 </html>
