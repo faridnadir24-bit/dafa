@@ -772,6 +772,12 @@ body{display:grid;grid-template-columns:var(--fw) 1fr;grid-template-rows:var(--f
       <div class="pcd-stat"><div class="pcd-v">~180</div><div class="pcd-u"><span data-i18n data-en="Liters/cycle">Liter/siklus</span></div></div>
       <div class="pcd-div"></div>
       <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Naturally high NPK (Nitrogen, Phosphorus, Potassium) content">Kandungan NPK (Nitrogen, Fosfor, Kalium) tinggi alami</span></div>
+      <div style="display:flex;gap:6px;margin:2px 0 8px">
+        <div style="flex:1;text-align:center;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:5px 3px"><div style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--eco)">2.15%</div><div style="font-size:8px;color:var(--txm);font-weight:600">N</div></div>
+        <div style="flex:1;text-align:center;background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;padding:5px 3px"><div style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--blue)">1.83%</div><div style="font-size:8px;color:var(--txm);font-weight:600">P</div></div>
+        <div style="flex:1;text-align:center;background:#fefce8;border:1px solid #fde68a;border-radius:6px;padding:5px 3px"><div style="font-family:var(--mono);font-size:13px;font-weight:700;color:#a16207">1.92%</div><div style="font-size:8px;color:var(--txm);font-weight:600">K</div></div>
+      </div>
+      <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Meets Indonesian National Standard (SNI) quality requirements">Memenuhi standar mutu SNI</span></div>
       <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Potential full substitute for synthetic chemical fertilizer">Berpotensi menjadi substitusi penuh pupuk kimia sintetis</span></div>
       <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Proven to enhance plant growth">Terbukti dapat meningkatkan pertumbuhan tanaman</span></div>
       <div class="pcd-f"><i class="fa-solid fa-check"></i> <span data-i18n data-en="Waste COD reduced by up to 82.6% before being processed into fertilizer">COD limbah berkurang hingga 82.6% sebelum diproses jadi pupuk</span></div>
@@ -1125,8 +1131,100 @@ function sel(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
 function flashEl(id){const el=document.getElementById(id);if(!el)return;const card=el.closest('.mv')||el;card.classList.remove('flash');void card.offsetWidth;card.classList.add('flash');}
 
 // IoT LOOP
+setInterval(()=>{
+  tick++;
+  let td=(Math.random()-.5)*.6;if(tick%7===0)td+=(Math.random()>.5?1.8:-1.8);S.tmp=Math.max(24,Math.min(46,S.tmp+td));
+  let pd=(Math.random()-.5)*.05;if(tick%11===0)pd+=(Math.random()>.5?.15:-.15);S.ph=Math.max(5.5,Math.min(8.5,S.ph+pd));
+  let dd=(Math.random()-.38)*.5;if(tick%13===0)dd+=Math.random()*1.2;S.dp=Math.max(4,Math.min(36,S.dp+dd));
+  S.ads=Math.min(100,S.ads+.025*(S.dp/12));
+  let cd=(Math.random()-.5)*.6;if(S.dp>T.dpmax*.8)cd-=.3;S.ch4=Math.max(68,Math.min(97,S.ch4+cd));
+  let hd=(Math.random()-.5)*.3;if(S.dp>T.dpmax*.7)hd+=.15;S.h2s=Math.max(.4,Math.min(8.5,S.h2s+hd));
+  if(tick%2===0)S.bio=+(S.bio+2+Math.random()*4).toFixed(1);
+  if(tick%5===0){S.vol=Math.max(8,S.vol-.4);S.pct=Math.round(S.vol/200*100);}
+  S.kpa=+(1+Math.random()*.45).toFixed(2);S.rate=+(3+Math.random()*.5).toFixed(1);
+  S.waste=Math.max(7,Math.min(13,S.waste+(Math.random()-.5)*.6));
+  S.thermal=Math.max(2.4,Math.min(4.8,S.thermal+(Math.random()-.5)*.3));
+  S.eff=Math.max(76,Math.min(94,S.eff+(Math.random()-.5)*1.2));
 
-  
+  const tOk=S.tmp>=T.tmin&&S.tmp<=T.tmax,tCrit=S.tmp<T.tmin-3||S.tmp>T.tmax+3;
+  const phOk=S.ph>=T.phmin&&S.ph<=T.phmax,phCrit=S.ph<T.phmin-.3||S.ph>T.phmax+.3;
+  const dpOk=S.dp<T.dpmax*.7,dpW=S.dp>=T.dpmax*.7&&S.dp<T.dpmax,dpD=S.dp>=T.dpmax;
+  const c4Ok=S.ch4>=85,c4W=S.ch4>=T.ch4min&&S.ch4<85,c4D=S.ch4<T.ch4min;
+  const h2W=S.h2s>=T.h2smax*.7&&S.h2s<T.h2smax,h2D=S.h2s>=T.h2smax;
+
+  const bStr=Math.round(S.bio).toLocaleString('id-ID');
+  sel('mv-bio',bStr);sel('mv-ch4',S.ch4.toFixed(1));sel('mv-tmp',S.tmp.toFixed(1));sel('mv-dp',S.dp.toFixed(1));
+  if(tick%3===0){['mv-bio','mv-ch4','mv-tmp','mv-dp'].forEach(flashEl);}
+  sel('kpi-bio',bStr+' L');sel('kpi-ch4',S.ch4.toFixed(1)+'%');sel('kpi-tmp',S.tmp.toFixed(1)+'°C');sel('kpi-dp',S.dp.toFixed(1)+' kPa');sel('kpi-vol',S.pct+'%');
+  sel('sb-bio',bStr+' L');
+
+  // NERACA ENERGI page live update
+  sel('eb-waste',S.waste.toFixed(1));
+  sel('eb-biogas',(S.rate*6.75).toFixed(1));
+  sel('eb-ch4',S.ch4.toFixed(1));
+  sel('eb-thermal',S.thermal.toFixed(1));
+  sel('eff-pct',Math.round(S.eff)+'%');
+  if(typeof cEff!=='undefined'){cEff.data.datasets[0].data=[Math.round(S.eff),100-Math.round(S.eff)];cEff.update('none');}
+  if(typeof cEnergyTrend!=='undefined'){
+    cEnergyTrend.data.datasets[0].data.push(+S.eff.toFixed(1));cEnergyTrend.data.datasets[0].data.shift();
+    cEnergyTrend.data.datasets[1].data.push(+S.thermal.toFixed(1));cEnergyTrend.data.datasets[1].data.shift();
+    cEnergyTrend.update('none');
+  }
+  buildSankey();
+
+  function updCard(id,crit,warn,lblId,okTxt,warnTxt,critTxt){cs(id,crit?'cdanger':warn?'cwarn':'cok');const el=document.getElementById(lblId);if(el){el.className='mst '+(crit?'bad':warn?'warn':'ok');el.innerHTML=crit?'<i class="fa-solid fa-triangle-exclamation"></i> '+critTxt:warn?'<i class="fa-solid fa-circle-exclamation"></i> '+warnTxt:'<i class="fa-solid fa-check"></i> '+okTxt;}}
+  updCard('crd-tmp',tCrit,!tOk,'ms-tmp',L('Mesofilik optimal','Optimal mesophilic'),L('Suhu menyimpang','Temperature deviating'),L('KRITIS di luar batas','CRITICAL out of range'));
+  updCard('crd-dp',dpD,dpW,'ms-dp',L('Normal <25 kPa','Normal <25 kPa'),L('ΔP meningkat','ΔP rising'),L('BAHAYA kritis!','Critical danger!'));
+  updCard('crd-ch4',c4D,c4W,'ms-ch4',L('Melampaui 85%','Exceeds 85%'),L('Mendekati batas','Nearing limit'),L('DI BAWAH BATAS!','BELOW LIMIT!'));
+
+  document.getElementById('nd1').className='fc '+(tCrit||phCrit?'fc-r':!tOk||!phOk?'fc-a':'fc-g');
+  document.getElementById('nd2').className='fc '+(dpD||h2D?'fc-r':dpW||h2W?'fc-a':'fc-g');
+  document.getElementById('nd3').className='fc '+(S.pct<T.vmin?'fc-r':S.pct<20?'fc-a':'fc-b');
+
+  const anyD=tCrit||phCrit||dpD||h2D||c4D,anyW=!tOk||!phOk||dpW||h2W||c4W;
+  if(anyD){sel('sys-s',L('🚨 ANOMALI KRITIS TERDETEKSI','🚨 CRITICAL ANOMALY DETECTED'));sel('sys-d',L('Segera periksa sensor merah. Intervensi manual diperlukan!','Immediately check red sensors. Manual intervention required!'));}
+  else if(anyW){sel('sys-s',L('⚠️ PERINGATAN AKTIF','⚠️ WARNING ACTIVE'));sel('sys-d',L('Satu atau lebih parameter mendekati batas. Pantau ketat.','One or more parameters approaching limits. Monitor closely.'));}
+  else{sel('sys-s',L('✅ SISTEM BERJALAN OPTIMAL','✅ SYSTEM RUNNING OPTIMALLY'));sel('sys-d',L('Semua parameter normal · Inkubasi hari 12/21 · ','All parameters normal · Incubation day 12/21 · ')+bStr+' L biogas');}
+
+  sel('t1-tv',S.tmp.toFixed(1));sel('t1-pv',S.ph.toFixed(2));sel('t1-kv',S.kpa);
+  sel('t1-bact-tmp',S.tmp.toFixed(1));sel('t1-bact-ph',S.ph.toFixed(2));sel('t1-bact-kpa',S.kpa);
+  const bpct=Math.min(100,Math.max(0,100-Math.abs(S.tmp-35.2)*5-Math.abs(S.ph-7.0)*20)).toFixed(0);
+  sel('t1-bact-pct',bpct);
+  cs('t1-c-tmp',tCrit?'cdanger':!tOk?'cwarn':'cok');cs('t1-c-ph',phCrit?'cdanger':!phOk?'cwarn':'cok');
+  const ts=document.getElementById('t1-tst');if(ts){ts.className='mst '+(tCrit?'bad':!tOk?'warn':'ok');ts.innerHTML=tCrit?'<i class="fa-solid fa-triangle-exclamation"></i> '+L('KRITIS','CRITICAL'):!tOk?'<i class="fa-solid fa-circle-exclamation"></i> '+L('Peringatan','Warning'):'<i class="fa-solid fa-check"></i> '+L('Target ~35.2°C','Target ~35.2°C');}
+  const ps=document.getElementById('t1-pst');if(ps){ps.className='mst '+(phCrit?'bad':!phOk?'warn':'ok');ps.innerHTML=phCrit?'<i class="fa-solid fa-triangle-exclamation"></i> '+L('KRITIS','CRITICAL'):!phOk?'<i class="fa-solid fa-circle-exclamation"></i> '+L('Peringatan','Warning'):'<i class="fa-solid fa-check"></i> '+L('Rentang 6.8–7.2','Range 6.8–7.2');}
+  let bs,bd;
+  if(phOk&&tOk){bs=L('✅ AKTIF OPTIMAL','✅ OPTIMAL ACTIVITY');bd='pH '+S.ph.toFixed(2)+L(' · Suhu ',' · Temp. ')+S.tmp.toFixed(1)+L('°C mesofilik · Viabilitas ','°C mesophilic · Viability ')+bpct+'%';}
+  else if(phCrit||tCrit){bs=L('🚨 KRITIS! BAKTERI STRES','🚨 CRITICAL! BACTERIA STRESSED');bd=L('Kondisi ekstrem hambat metanogen! Intervensi segera!','Extreme conditions inhibit methanogens! Immediate intervention needed!');}
+  else{bs=L('⚠️ AKTIVITAS MENURUN','⚠️ ACTIVITY DECLINING');bd=(!phOk?'pH '+S.ph.toFixed(2)+L(' di luar 6.8–7.2 ',' outside 6.8–7.2 '):'')+(!tOk?L('Suhu ','Temp. ')+S.tmp.toFixed(1)+L('°C menyimpang','°C deviating'):'');}
+  sel('t1-bs',bs);sel('t1-bd',bd);
+
+  sel('mv-dp2',S.dp.toFixed(1));sel('mv-ch4t2',S.ch4.toFixed(1));sel('mv-h2s',S.h2s.toFixed(1));sel('mv-ads',S.ads.toFixed(0));
+  cs('crd-dp2',dpD?'cdanger':dpW?'cwarn':'cok');
+  const dpNEl=document.getElementById('dp2-n');if(dpNEl){dpNEl.textContent=S.dp.toFixed(1);dpNEl.className='dp-n '+(dpD?'dp-bad':dpW?'dp-warn':'dp-ok');}
+  const dpBEl=document.getElementById('dp2-b');if(dpBEl){dpBEl.textContent=dpD?L('⚠ KRITIS — GANTI ADSORBEN','⚠ CRITICAL — REPLACE ADSORBENT'):dpW?L('⚠ PERINGATAN ΔP Tinggi','⚠ WARNING High ΔP'):L('✓ NORMAL','✓ NORMAL');dpBEl.className='dp-b '+(dpD?'dpb-bad':dpW?'dpb-warn':'dpb-ok');}
+  const bch=document.getElementById('bar-ch4');if(bch){bch.style.width=Math.min(100,S.ch4)+'%';bch.textContent=S.ch4.toFixed(1)+'%';bch.className='pbf '+(c4D?'pf-bad':c4W?'pf-w':'pf-g');}
+  const ch4lv=document.getElementById('ch4-lv');if(ch4lv){ch4lv.textContent=S.ch4.toFixed(1)+'%';ch4lv.style.color=c4D?'var(--rose)':c4W?'var(--amber)':'var(--eco)';}
+  const bh2=document.getElementById('bar-h2s');if(bh2){const hw=Math.min(100,(S.h2s/T.h2smax)*100);bh2.style.width=hw+'%';bh2.textContent=S.h2s.toFixed(1)+' ppm';bh2.className='pbf '+(h2D?'pf-bad':h2W?'pf-w':'pf-r');}
+  const h2lv=document.getElementById('h2s-lv');if(h2lv){h2lv.textContent=S.h2s.toFixed(1)+' ppm';}
+  const ab=document.getElementById('ads-bar');if(ab){const aw=Math.min(100,S.ads);ab.style.width=aw.toFixed(0)+'%';ab.textContent=aw.toFixed(0)+'%';ab.className='pbf '+(aw>80?'pf-bad':aw>60?'pf-w':'pf-ok');}
+  const mads=document.getElementById('ms-ads');if(mads){mads.className='mst '+(S.ads>80?'bad':S.ads>60?'warn':'neu');mads.innerHTML=S.ads>80?'<i class="fa-solid fa-triangle-exclamation"></i> '+L('Segera ganti!','Replace now!'):S.ads>60?'<i class="fa-solid fa-circle-exclamation"></i> '+L('Mulai jenuh','Starting to saturate'):'<i class="fa-solid fa-circle-dot"></i> '+L('Ca(OH)₂ aktif','Ca(OH)₂ active');}
+
+  sel('t3-pct',S.pct+'%');sel('t3-pct-mc',S.pct);sel('t3-vol',Math.round(S.vol));sel('t3-vol-mc',Math.round(S.vol));sel('t3-prs',S.kpa);sel('t3-kpa-mc',S.kpa);sel('t3-rate',S.rate);
+  cGauge.data.datasets[0].data=[S.pct,100-S.pct];cGauge.update('none');
+
+  sel('cy-bio',Math.round(S.bio).toLocaleString('id-ID'));sel('cy-ch4',S.ch4.toFixed(1)+'%');sel('cy-poc','~'+Math.round(S.vol*1.2));
+
+  trendBuf.tmp.push(+S.tmp.toFixed(2));trendBuf.tmp.shift();
+  trendBuf.ph.push(+S.ph.toFixed(3));trendBuf.ph.shift();
+  cTrend.data.datasets[0].data=[...trendBuf.tmp];cTrend.data.datasets[1].data=[...trendBuf.ph];cTrend.update('none');
+  cT2.data.datasets[0].data.push(+S.dp.toFixed(1));cT2.data.datasets[0].data.shift();
+  cT2.data.datasets[1].data.push(+S.ch4.toFixed(1));cT2.data.datasets[1].data.shift();
+  cT2.update('none');
+
+  if(tick%8===0){const box=document.getElementById('con'),n=new Date(),l=document.createElement('div');l.className='ll ok';l.innerHTML='<span class="lt">['+n.toLocaleTimeString('id-ID')+']</span> #'+tick+' T='+S.tmp.toFixed(1)+'°C pH='+S.ph.toFixed(2)+' CH₄='+S.ch4.toFixed(1)+'% ΔP='+S.dp.toFixed(1)+'kPa ✓';box.insertBefore(l,box.firstChild);while(box.children.length>40)box.removeChild(box.lastChild);conCnt++;sel('con-cnt',conCnt+' event');}
+
+  buildSG();if(tick%2===0)addSR();
 
   if(tCrit)addLog(L('Sensor Suhu · Tabung 1','Temperature Sensor · Tank 1'),L('Suhu ','Temperature ')+S.tmp.toFixed(1)+'°C — '+(S.tmp>T.tmax?L('terlalu tinggi','too high'):L('terlalu rendah','too low'))+L(' · Batas ',' · Limit ')+T.tmin+'–'+T.tmax+'°C',S.tmp>T.tmax?L('ALERT: Aktifkan pendinginan reaktor. Kurangi paparan sinar matahari. Periksa insulasi.','ALERT: Activate reactor cooling. Reduce sunlight exposure. Check insulation.'):L('ALERT: Tambahkan insulasi termal. Pertimbangkan pemanas tercelup 12V DC. Target ~35.2°C.','ALERT: Add thermal insulation. Consider a 12V DC immersion heater. Target ~35.2°C.'),'DANGER');
   else if(!tOk&&tick%3===0)addLog(L('Sensor Suhu · Tabung 1','Temperature Sensor · Tank 1'),L('Suhu ','Temperature ')+S.tmp.toFixed(1)+L('°C mendekati batas mesofilik','°C nearing mesophilic limit'),L('WARNING: Pantau tiap 15 menit. Siapkan tindakan korektif bila tren berlanjut keluar 30–40°C.','WARNING: Monitor every 15 minutes. Prepare corrective action if the trend continues outside 30–40°C.'),'WARNING');
@@ -1141,4 +1239,4 @@ function flashEl(id){const el=document.getElementById(id);if(!el)return;const ca
 saveCfg();buildSG();applyLang();
 </script>
 </body>
-                                                                                                                                                                                                                 </html>
+</html>
